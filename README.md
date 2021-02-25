@@ -12,7 +12,7 @@
   <section id="container">
 
     <!-- about me-->
-    <h1>[Jordan!]</h1>  
+    <h1>Jordan!</h1>  
     <p class="desc">Hi welcome to my site!</p>
     
     <!-- links to my work -->
