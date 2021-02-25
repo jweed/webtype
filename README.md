@@ -1,5 +1,3 @@
-# webtype
-
 <!DOCTYPE html>
 <html>
 <head>
