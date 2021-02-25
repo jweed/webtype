@@ -2,7 +2,7 @@
 <html>
 <head>
   <meta charset="utf-8" />
-  <title>[Jordan's] Web Type Class Site</title>
+  <title>Jordan's Web Type Class Site</title>
   <!-- this is where my meta-info lives, but won’t show up on the page itself-->
 </head>
 <body>
