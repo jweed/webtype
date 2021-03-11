@@ -1,0 +1,606 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <title>Jordan's Commuunity Archive</title>
+  <!-- this is where my meta-info lives, but won’t show up on the page itself-->
+
+  <style type="text/css">
+
+    @font-face{
+         font-family:Hatton;
+         src: url('Hatton-Ultralight copy.otf');
+      }
+
+    @keyframes abouts{
+
+      0%{
+        transform: translateX(-112vw);
+
+
+      }
+
+      100%{
+
+        transform: translateX(-25vw);
+
+
+      }
+
+
+    }
+
+    @keyframes backs{
+
+      0%{
+        transform: translateX(-25vw);
+
+
+      }
+
+      100%{
+
+        transform: translateX(-112vw);
+
+
+      }
+
+
+    }
+
+    body{
+
+      cursor:auto;
+
+      
+      
+
+       
+    }
+
+    .image-header{
+
+      width:50vw;
+      height:20vh;
+      position:absolute;
+      margin-left:5vw;
+      margin-top:35vh;
+      transform:rotate(100deg);
+    }
+
+    .about{
+      width:116vw;
+      height:100vh;
+      position:fixed;
+      background-color:black;
+
+      
+      margin-top:-1.1vh;
+      overflow:hidden;
+      /*animation: backs 1s ease-in 0s 1 normal;*/
+      transform: translateX(-112vw);
+
+
+    }
+
+    .about:hover{
+
+      animation: abouts 1s ease-in 0s 1 normal;
+      transform: translateX(-25vw);
+
+
+    }
+
+    .about-title{
+      position:fixed;
+      margin-top:78vh;
+      margin-left:104vw;
+
+      width:20vw;
+      height:4vh;
+      
+      color:white;
+      font-size:1.7vw;
+      transform:rotate(-90deg);
+    }
+
+
+    .container{
+
+      position:absolute;
+      width:96vw;
+      height:690vh;
+      margin-left:4vw;
+      margin-top:-2vh;
+      background-image: linear-gradient(#82DE90, #FCFF64,#ff5d47);
+      overflow:scroll;
+
+    }
+
+    .title-background{
+
+      position:absolute;
+      width:100%;
+      height:80vh;
+      margin-top:0vh;
+     
+
+
+    }
+
+    .title{
+
+      position:absolute;
+      width:70%;
+      height:20vh;
+      margin-top:20vh;
+      margin-left:14%;
+      color:black;
+      font-size: 6vw;
+      text-align:center;
+    }
+
+    .dropdown{
+
+      position:absolute;
+      width:100%;
+      height:10vh;
+      color:black;
+      font-size:2vw;
+      font-family: serif;
+
+      margin-left:84%;
+
+
+    }
+
+    .dropbtn {
+ background-color:transparent;
+  color: white;
+  padding: 16px;
+  font-size:2vw;
+  border: none;
+  cursor: pointer;
+  font-family:serif;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  
+  min-width: 160px;
+  /*box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;*/
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {color:white;}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown:hover .dropbtn {
+  color:black;
+  background-color:transparent;
+}
+
+.march{
+
+  position:absolute;
+  width:50%;
+  height:10%;
+  margin-left:-2%;
+  margin-top:116vh;
+  font-size:7vw;
+  color:black;
+  font-family:Hatton;
+  transform:rotate(-90deg);
+
+
+}
+
+.march-background{
+
+      position:absolute;
+      width:100%;
+      height:80vh;
+      margin-top:120vh;}
+     
+
+
+
+
+.april{
+  position:absolute;
+  width:50%;
+  height:10%;
+  margin-left:5%;
+  margin-top:220vh;
+  font-size:2vw;
+  color:black;
+
+
+}
+
+.may{
+  position:absolute;
+  width:50%;
+  height:10%;
+  margin-left:5%;
+  margin-top:310vh;
+  font-size:2vw;
+  color:black;
+
+
+}
+
+.june{
+  position:absolute;
+  width:50%;
+  height:10%;
+  margin-left:5%;
+  margin-top:400vh;
+  font-size:2vw;
+  color:black;
+
+
+}
+
+.july{
+
+  position:absolute;
+  width:50%;
+  height:10%;
+  margin-left:5%;
+  margin-top:490vh;
+  font-size:2vw;
+  color:black;
+
+
+}
+
+
+.august{
+
+  position:absolute;
+  width:50%;
+  height:10%;
+  margin-left:5%;
+  margin-top:580vh;
+  font-size:2vw;
+  color:black;
+
+}
+
+.march-container{
+
+  position:absolute;
+  width:80%;
+  height:80vh;
+  margin-left:12%;
+  margin-top:110vh;
+  /*border:2px solid black;*/
+
+
+}
+
+.april-container{
+
+  position:absolute;
+  width:80%;
+  height:80vh;
+  margin-left:12%;
+  margin-top:220vh;
+  border:2px solid black;
+
+
+}
+
+.may-container{
+  position:absolute;
+  width:80%;
+  height:80vh;
+  margin-left:12%;
+  margin-top:310vh;
+  border:2px solid black;
+
+
+}
+
+.june-container{
+
+  position:absolute;
+  width:80%;
+  height:80vh;
+  margin-left:12%;
+  margin-top:400vh;
+  border:2px solid black;
+
+
+}
+
+.july-container{
+
+  position:absolute;
+  width:80%;
+  height:80vh;
+  margin-left:12%;
+  margin-top:490vh;
+  border:2px solid black;
+
+}
+
+.august-container{
+
+  position:absolute;
+  width:80%;
+  height:80vh;
+  margin-left:12%;
+  margin-top:580vh;
+  border:2px solid black;
+
+}
+
+.bottle-image{
+
+  position:absolute;
+  width:80%;
+  height:100%;
+  margin-left:0%;
+
+
+}
+
+.ingredients{
+
+  position:absolute;
+  width:25%;
+  height:100%;
+  margin-left:55%;
+  color:black;
+  font-size: 4vw;
+  
+  text-align:center;
+}
+
+.ingredients-text{
+
+  position:absolute;
+
+  width:100%;
+  height:100%;
+  font-size:1.6vw;
+  text-align:left;
+  line-height: 2.5vw
+
+}
+
+.logo{
+
+  position:absolute;
+  width:35%;
+  height:50%;
+  margin-left:50%;
+
+}
+
+.description{
+  position:absolute;
+  width:30%;
+  height:50%;
+  margin-top:0%;
+  margin-left:20%;
+  font-size: 2.2vw;
+  line-height: 3vw;
+
+
+}
+
+.scale{
+
+  position:absolute;
+  width:5%;
+  height:100%;
+  margin-left:95%;
+  border:2px solid black;
+}
+
+.scale-number{
+
+  position:absolute;
+  width:100%;
+  height:10%;
+  margin-top:1060%;
+  background-color:black;
+}
+
+.scale-title{
+
+  position:absolute;
+  width:53%;
+  height:5%;
+  margin-left:64%;
+  margin-top:25%;
+  /*border:2px solid black;*/
+  color:black;
+  font-size:3vw;
+  transform:rotate(-90deg);
+  text-align:center;
+
+
+}
+     
+
+  </style>
+</head>
+<body>
+
+  <div class="container">
+
+    <div class="title-background">
+
+      <img src="background-drip-outline-02.png" style="width:100%">
+    </div>
+    <div class="title">
+
+      Spring-Summer <br> Hot Sauce  <br> Event Calendar
+
+    </div>
+
+    <div class="dropdown">
+
+      <button class="dropbtn">Jump to Month</button>
+        <div class="dropdown-content">
+        <a href="#march">March</a>
+        <a href="#april">April</a>
+        <a href="#may">May</a>
+        <a href="#june">June</a>
+        <a href="#july">July</a>
+        <a href="#august">August</a>
+      </div>
+
+    </div>
+
+    <a name="march" class="march">
+
+      MARCH
+
+    </a>
+
+    <div class="march-container">
+
+      <div class="bottle-image">
+
+        <img src="hot-sauce-bottle-march-01.png" style="height:100%">
+
+      </div>
+
+      <div class="ingredients">
+
+        <br><br><br><br><br><br>
+
+        Ingredients
+
+        <div class="ingredients-text">
+
+          
+
+          Organic Chile de Arbol, Organic Apple Cider Vinegar, Organic Rice Vinegar, Water, Organic Garlic, Organic Turmeric, Salt.
+
+        </div>
+
+      </div>
+
+      <div class="logo">
+
+        <img src="hot-ones-logo-03.png" style="width:100%">
+      </div>
+
+      <div class="description">
+
+        The lead-off sauce for Hot Ones honors American hot sauce traditions. The Classic is an ode to this splashy style, with all-natural ingredients like tangy apple cider vinegar and grassy chile de arbol peppers. Quality makes a classic! With a kiss of heat but loads of flavor from chile de arbol, this is the most mild sauce in the Hot Ones lineup.
+
+      </div>
+
+      <div class="scale">
+        
+        <div class="scale-number">
+          
+        </div>
+      </div>
+
+      <div class="scale-title">
+
+        S C O V I L L E   S C A L E
+
+      </div>
+
+
+
+
+
+    </div>
+
+    <div class="march-background">
+
+      <img src="background-drip-outline-02.png" style="width:100%">
+    </div>
+
+    <a name="april"class="april">
+
+      April
+
+    </a>
+
+    <div class="april-container">
+
+    </div>
+
+    <a name="may"class="may">
+
+      May
+
+    </a>
+
+    <div class="may-container">
+
+    </div>
+
+    <a name="june"class="june">
+
+      June
+
+    </a>
+
+    <div class="june-container">
+
+    </div>
+
+    <a name="july"class="july">
+
+      July
+
+    </a>
+
+    <div class="july-container">
+
+    </div>
+
+    <a name="august"class="august">
+
+      August
+
+    </a>
+
+    <div class="august-container">
+
+    </div>
+
+
+  </div>
+  <div class="about">
+    <div class="about-title">
+      about
+
+    </div>
+  </div>
+
+  
+
+
+  
+
+  <!-- <div class="image-header">
+
+  <img src="hot-sauce-bottle-isolated-icon-vector-28003710-white-01.png" style="width:10vw">
+</div> -->
+  
+</body>
+</html>
