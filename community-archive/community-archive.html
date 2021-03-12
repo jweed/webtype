@@ -12,6 +12,48 @@
          src: url('Hatton-Ultralight copy.otf');
       }
 
+    @font-face{
+
+      font-family:Migra;
+      src:url('Migra-Extralight copy.otf');
+    }
+
+    @font-face{
+
+      font-family:Migra-Bold;
+      src:url('Migra-Extrabold copy.otf');
+    }
+
+    @font-face{
+
+      font-family:Oi;
+      src:url('Oi-Regular.ttf');
+    }
+
+    @font-face{
+
+      font-family:Runic;
+      src:url('RunicMTStd-Condensed copy.otf');
+    }
+
+    @font-face{
+
+      font-family:Digestive;
+      src:url('DigestiveDemo-Five copy.otf');
+    }
+
+    @font-face{
+
+      font-family:Gatwick-Bold;
+      src:url('Gatwick-Bold copy.otf');
+    }
+
+    @font-face{
+      font-family:Louize;
+      src:url('LouizeDisplayTrial-Regular copy.otf');
+
+    }
+
     @keyframes abouts{
 
       0%{
@@ -48,14 +90,56 @@
 
     }
 
+    @keyframes title{
+
+    0%{ color:black;
+
+
+    }
+
+    33%{
+
+      color:#ff5d47;
+    }
+
+    100%{color:black;
+
+
+    }
+
+    }
+
+    @keyframes about{
+
+      0%{color:#82DE90;}
+      33%{color:#FCFF64;}
+      100%{color:#ff5d47;}
+    }
+
+    html{
+
+      scroll-behavior: smooth;
+
+    }
+
     body{
 
-      cursor:auto;
-
       
-      
+      overflow-x: hidden;
+      /*cursor: url('fire-icon-png-01.png'),auto; */}
 
-       
+    body::-webkit-scrollbar {
+      width: 20px;
+      height: 20px;
+      
+    }
+    body::-webkit-scrollbar-track {
+      background-image: linear-gradient(#82DE90, #FCFF64,#ff5d47);
+      border: 2px solid black;
+    }
+    body::-webkit-scrollbar-thumb {
+      background-color:black;
+      border: 2px solid black;
     }
 
     .image-header{
@@ -98,12 +182,15 @@
 
       width:20vw;
       height:4vh;
-      
-      color:white;
-      font-size:1.7vw;
+      font-family:Digestive;
+      letter-spacing: 2px;
+      color:#ff5d47;
+      /*font-size:1.7vw;*/
       transform:rotate(-90deg);
+      animation: about 6s ease-in 0s infinite alternate;
     }
 
+   
 
     .container{
 
@@ -115,7 +202,11 @@
       background-image: linear-gradient(#82DE90, #FCFF64,#ff5d47);
       overflow:scroll;
 
+
+
     }
+
+
 
     .title-background{
 
@@ -131,44 +222,80 @@
     .title{
 
       position:absolute;
-      width:70%;
+      width:90%;
       height:20vh;
-      margin-top:20vh;
-      margin-left:14%;
+      margin-top:10vh;
+      margin-left:0%;
       color:black;
       font-size: 6vw;
       text-align:center;
+      line-height: 10vw;
+      animation: title 6s ease-in 0s infinite alternate;
     }
+
+     .about-line1{
+
+      font-family:Runic;
+      font-size:20vw;
+      line-height: 16vw;
+
+
+    }
+
+    .about-line2{
+
+      font-family:Digestive;
+      font-size:9vw;
+      line-height: 8vw;
+
+
+    }
+
+    .about-line3{
+
+      font-family:Migra;
+      font-size: 10vw;
+
+
+    }
+
 
     .dropdown{
 
       position:absolute;
-      width:100%;
+      width:30%;
       height:10vh;
       color:black;
       font-size:2vw;
-      font-family: serif;
+      font-family:Migra-Bold;
+      text-align:right;
+      margin-left:66%;
+      /*letter-spacing: 3px;*/
 
-      margin-left:84%;
+      /*margin-left:84%;*/
 
 
     }
 
     .dropbtn {
  background-color:transparent;
-  color: white;
+  color: black;
+  width:50%;
   padding: 16px;
-  font-size:2vw;
+  font-size:3vw;
   border: none;
   cursor: pointer;
-  font-family:serif;
+  font-family:Runic;
+  text-align:right;
 }
 
 .dropdown-content {
   display: none;
   position: absolute;
-  
+  width:30%;
+  text-align:right;
   min-width: 160px;
+  margin-left:54%;
   /*box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   z-index: 1;*/
 }
@@ -178,9 +305,10 @@
   padding: 12px 16px;
   text-decoration: none;
   display: block;
+  text-align:right;
 }
 
-.dropdown-content a:hover {color:white;}
+.dropdown-content a:hover {color:#ff5d47;}
 
 .dropdown:hover .dropdown-content {
   display: block;
@@ -198,9 +326,9 @@
   height:10%;
   margin-left:-2%;
   margin-top:116vh;
-  font-size:7vw;
+  font-size:5vw;
   color:black;
-  font-family:Hatton;
+  font-family:Gatwick;
   transform:rotate(-90deg);
 
 
@@ -282,11 +410,11 @@
 .march-container{
 
   position:absolute;
-  width:80%;
+  width:70%;
   height:80vh;
-  margin-left:12%;
+  margin-left:24%;
   margin-top:110vh;
-  /*border:2px solid black;*/
+ 
 
 
 }
@@ -361,81 +489,130 @@
 .ingredients{
 
   position:absolute;
-  width:25%;
-  height:100%;
-  margin-left:55%;
+  width:24%;
+  height:38%;
+  margin-left:74.5%;
+  margin-top:40%;
+
   color:black;
-  font-size: 4vw;
-  
-  text-align:center;
+  font-size: 40px;
+  padding:1%;
+  text-align:left;
+  font-family:Runic;
+  box-sizing: border-box;
+  border:2px dashed black;
 }
 
 .ingredients-text{
 
   position:absolute;
 
-  width:100%;
+  width:94%;
   height:100%;
-  font-size:1.6vw;
+  margin-top:1%;
+  font-size:14px;
   text-align:left;
-  line-height: 2.5vw
-
+  line-height: 18px;
+  font-family:gatwick-bold;
+  letter-spacing: 1px;
+  box-sizing: border-box;
+  padding:1%;
 }
 
 .logo{
 
   position:absolute;
-  width:35%;
-  height:50%;
-  margin-left:50%;
+  width:14%;
+  height:14%;
+  margin-left:40%;
+  margin-top:64%;
+
+}
+
+.description-background{
+  position:absolute;
+  width:34%;
+  height:70%;
+  margin-top:2%;
+  margin-left:32%;
+  background-color:black;
+
 
 }
 
 .description{
   position:absolute;
-  width:30%;
-  height:50%;
-  margin-top:0%;
-  margin-left:20%;
-  font-size: 2.2vw;
-  line-height: 3vw;
-
-
-}
-
-.scale{
-
-  position:absolute;
-  width:5%;
-  height:100%;
-  margin-left:95%;
+  width:34%;
+  height:70%;
+  margin-top:5%;
+  margin-left:35%;
+  background-image: linear-gradient(#a5de82, #c3f078);
   border:2px solid black;
+  font-size: 24px;
+  font-family:Louize;
+  line-height: 26px;
+  padding:2%;
+  box-sizing: border-box;
+  letter-spacing: 1px;
+
+
 }
 
-.scale-number{
+.scoville{
+  background:black;
+  animation: about 6s ease-in 0s infinite alternate;
+}
+
+.scoville-text{
 
   position:absolute;
-  width:100%;
+  width:50%;
   height:10%;
-  margin-top:1060%;
-  background-color:black;
+  margin-left:4%;
+  margin-top:67vh;
+  font-size:1.55vw;
+  color:black;
+  font-family:Gatwick-Bold;
+  transform:rotate(-90deg);
+
 }
 
-.scale-title{
+.sub-container{
 
   position:absolute;
-  width:53%;
-  height:5%;
-  margin-left:64%;
-  margin-top:25%;
-  /*border:2px solid black;*/
-  color:black;
-  font-size:3vw;
-  transform:rotate(-90deg);
-  text-align:center;
+
+  width:70%;
+  height:100%;
+  margin-left:30%;
+  border:2px solid black;
 
 
 }
+
+.pairings{
+  position:absolute;
+  width:70%;
+  height:50%;
+  margin-top:76%;
+  margin-left:6%;
+  font-family: Digestive;
+  font-size:40px;
+
+}
+
+.chile{
+
+  position:absolute;
+
+  width:28%;
+  height:30%;
+  margin-left:60%;
+  margin-top:5%;
+
+
+}
+
+
      
 
   </style>
@@ -450,29 +627,32 @@
     </div>
     <div class="title">
 
-      Spring-Summer <br> Hot Sauce  <br> Event Calendar
+      <span class="about-line1">SPRING-SUMMER</span> <br><span class="about-line2"> HOT SAUCE</span>  <br><span class="about-line3"> EVENT CALENDAR</span>
 
     </div>
 
     <div class="dropdown">
 
-      <button class="dropbtn">Jump to Month</button>
+      <button class="dropbtn">JUMP TO MONTH</button>
         <div class="dropdown-content">
-        <a href="#march">March</a>
-        <a href="#april">April</a>
-        <a href="#may">May</a>
-        <a href="#june">June</a>
-        <a href="#july">July</a>
-        <a href="#august">August</a>
+        <a href="#march">MARCH</a>
+        <a href="#april">APRIL</a>
+        <a href="#may">MAY</a>
+        <a href="#june">JUNE</a>
+        <a href="#july">JULY</a>
+        <a href="#august">AUGUST</a>
       </div>
 
     </div>
 
     <a name="march" class="march">
 
-      MARCH
+      MARCH|<span class="scoville"> 1,800 </span>
 
     </a>
+
+    <span class="scoville-text"> SCOVILLE LEVEL
+    </span>
 
     <div class="march-container">
 
@@ -484,9 +664,9 @@
 
       <div class="ingredients">
 
-        <br><br><br><br><br><br>
+        
 
-        Ingredients
+        INGREDIENTS
 
         <div class="ingredients-text">
 
@@ -498,10 +678,9 @@
 
       </div>
 
-      <div class="logo">
+      
 
-        <img src="hot-ones-logo-03.png" style="width:100%">
-      </div>
+      <div class="description-background"></div>
 
       <div class="description">
 
@@ -509,29 +688,32 @@
 
       </div>
 
-      <div class="scale">
+
+
+      <div class="sub-container">
         
-        <div class="scale-number">
-          
-        </div>
+        <div class="pairings">
+        PAIR WITH ANYTHING<span style="font-family:Gatwick-Bold">!</span>
       </div>
 
-      <div class="scale-title">
+      <div class="chile">
+        <img src="chile-de-arbol-04.png"style="width:100%">
+      </div>
 
-        S C O V I L L E   S C A L E
+      <div class="logo">
+
+        <img src="hot-ones-logo-03.png" style="width:100%">
+      </div>
 
       </div>
 
 
 
-
+      
 
     </div>
 
-    <div class="march-background">
-
-      <img src="background-drip-outline-02.png" style="width:100%">
-    </div>
+    
 
     <a name="april"class="april">
 
@@ -587,7 +769,7 @@
   </div>
   <div class="about">
     <div class="about-title">
-      about
+      ABOUT
 
     </div>
   </div>
