@@ -1,0 +1,521 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <title>Jordan's Type Composition Exercise</title>
+  <!-- this is where my meta-info lives, but won’t show up on the page itself-->
+
+  <style type="text/css">
+
+  	@font-face{
+
+  		font-family:Murmure;
+  		src:url('le-murmure copy.otf');
+  	}
+
+  	.composition1{
+
+  		position:absolute;
+
+  		width:300px;
+  		height:300px;
+  		margin:50px;
+  		/*border:2px solid black;*/
+  		overflow-x: hidden;
+  		overflow-y: hidden;
+  		background-color:black;
+  	}
+
+  	.comp1-type{
+
+  		width:300px;
+  		height:300px;
+  		margin-left:18%;
+
+  		
+  		margin-top:-10%;
+  		font-family: Murmure;
+  		font-size: 460px;
+  		
+  		transform: rotate(90deg);
+  		letter-spacing: -60px;
+  		color:white;
+  	}
+  	.comp1-type2{
+
+  		width:300px;
+  		height:100px;
+  		margin-left:-5%;
+
+  		
+  		margin-top:-20%;
+  		font-family: Murmure;
+  		font-size: 10px;
+  		letter-spacing: -0px;
+  		color:white;
+  		
+  	}
+
+  	.composition2{
+  		position:absolute;
+  		width:300px;
+  		height:300px;
+  		margin-left:475px;
+  		margin-top:50px;
+  		border:2px solid black;
+  		overflow-x: hidden;
+  		overflow-y: hidden;
+  		background-color:white;
+  	}
+
+  	.comp2-type{
+
+  		width:300px;
+  		height:300px;
+  		margin-left:2%;
+
+  		
+  		margin-top:14%;
+  		font-family: Murmure;
+  		font-size: 370px;
+  		
+  		transform: rotate(90deg);
+  		letter-spacing: 10px;
+  		color:black;
+  	}
+
+  	.comp2-type2{
+
+  		width:300px;
+  		height:300px;
+  		margin-left:-2%;
+
+  		
+  		margin-top:-128%;
+  		font-family: Murmure;
+  		font-size: 370px;
+  		
+  		transform: rotate(-90deg);
+  		letter-spacing: 10px;
+  		color:black;
+  	}
+
+  	.comp2-type3{
+
+  		width:300px;
+  		height:300px;
+  		margin-left:-5%;
+
+  		
+  		margin-top:-80%;
+  		font-family: Murmure;
+  		font-size: 380px;
+  		
+  		transform: rotate(-90deg);
+  		letter-spacing: 10px;
+  		color:black;
+  	}
+  	.comp2-type4{
+
+  		width:300px;
+  		height:300px;
+  		margin-left:-5%;
+
+  		
+  		margin-top:-192%;
+  		font-family: Murmure;
+  		font-size: 380px;
+  		
+  		transform: rotate(-90deg);
+  		letter-spacing: 10px;
+  		color:black;
+  	}
+
+  	.composition3{
+  		position:absolute;
+  		width:300px;
+  		height:300px;
+  		margin-left:900px;
+  		margin-top:50px;
+  		border:2px solid black;
+  		overflow-x: hidden;
+  		overflow-y: hidden;
+  		background-color:black;
+  	}
+
+  	.comp3-type{
+
+  		width:300px;
+  		height:300px;
+  		margin-left:12.25%;
+
+  		
+  		margin-top:24%;
+  		font-family: Murmure;
+  		font-size: 370px;
+  		
+  		transform: rotate(90deg);
+  		letter-spacing: 10px;
+  		color:white;
+  	}
+
+  	.comp3-type2{
+
+  		width:300px;
+  		height:300px;
+  		margin-left:12.25%;
+
+  		
+  		margin-top:-80%;
+  		font-family: Murmure;
+  		font-size: 370px;
+  		
+  		transform: rotate(90deg);
+  		letter-spacing: 10px;
+  		color:white;
+  	}
+
+  	.comp3-type3{
+
+  		width:300px;
+  		height:300px;
+  		margin-left:12.25%;
+
+  		
+  		margin-top:-140%;
+  		font-family: Murmure;
+  		font-size: 370px;
+  		
+  		transform: rotate(90deg);
+  		letter-spacing: 10px;
+  		color:white;
+  	}
+
+  	.composition4{
+
+  		position:absolute;
+
+  		width:300px;
+  		height:300px;
+  		margin-top:400px;
+  		margin-left:50px;
+  		/*border:2px solid black;*/
+  		overflow-x: hidden;
+  		overflow-y: hidden;
+  		background-color:black;
+  	}
+
+  	
+  	.comp4-type{
+
+  		width:300px;
+  		height:300px;
+  		margin-left:-2%;
+
+  		
+  		margin-top:-74%;
+  		font-family: Murmure;
+  		font-size: 100px;
+  		
+  		transform: rotate(180deg);
+  		letter-spacing: 10px;
+  		color:white;
+  	}
+
+  	.comp4-type2{
+  		width:300px;
+  		height:300px;
+  		margin-left:2%;
+
+  		
+  		margin-top:-10%;
+  		font-family: Murmure;
+  		font-size: 100px;
+  		
+  		transform: rotate(0deg);
+  		letter-spacing: 10px;
+  		color:white;
+  	}
+
+  	.comp4-type3{
+
+  		width:300px;
+  		height:300px;
+  		margin-left:-1.7%;
+
+  		
+  		margin-top:-144%;
+  		font-family: Murmure;
+  		font-size: 100px;
+  		
+  		transform: rotate(180deg);
+  		letter-spacing: 10px;
+  		color:white;
+  	}
+
+  	.comp4-type4{
+  		width:300px;
+  		height:300px;
+  		margin-left:2%;
+
+  		
+  		margin-top:-10%;
+  		font-family: Murmure;
+  		font-size: 100px;
+  		
+  		transform: rotate(0deg);
+  		letter-spacing: 10px;
+  		color:white;
+  	}
+
+  	.composition5{
+
+  		position:absolute;
+
+  		width:300px;
+  		height:300px;
+  		margin-top:400px;
+  		margin-left:475px;
+  		border:2px solid black;
+  		overflow-x: hidden;
+  		overflow-y: hidden;
+  		background-color:white;
+  	}
+
+  	.comp5-type{
+
+  		width:300px;
+  		height:300px;
+  		margin-left:30%;
+
+  		
+  		margin-top:0%;
+  		font-family: Murmure;
+  		font-size: 500px;
+  		
+  		transform: rotate(45deg);
+  		letter-spacing: 10px;
+  		color:black;
+  	}
+
+  	.comp5-type2{
+
+  		width:300px;
+  		height:300px;
+  		margin-left:40%;
+
+  		
+  		margin-top:-90%;
+  		font-family: Murmure;
+  		font-size: 500px;
+  		
+  		transform: rotate(45deg);
+  		letter-spacing: 10px;
+  		color:white;
+  	}
+
+  	.comp5-type3{
+
+  		width:300px;
+  		height:300px;
+  		margin-left:40%;
+
+  		
+  		margin-top:-80%;
+  		font-family: Murmure;
+  		font-size: 500px;
+  		
+  		transform: rotate(45deg);
+  		letter-spacing: 10px;
+  		color:black;
+  	}
+
+  	.comp5-type4{
+
+  		width:300px;
+  		height:300px;
+  		margin-left:40%;
+
+  		
+  		margin-top:-81%;
+  		font-family: Murmure;
+  		font-size: 500px;
+  		
+  		transform: rotate(45deg);
+  		letter-spacing: 10px;
+  		color:white;
+  	}
+
+  	.comp5-type5{
+
+  		width:300px;
+  		height:300px;
+  		margin-left:40%;
+
+  		
+  		margin-top:-80%;
+  		font-family: Murmure;
+  		font-size: 500px;
+  		
+  		transform: rotate(45deg);
+  		letter-spacing: 10px;
+  		color:black;
+  	}
+
+
+  	.composition6{
+
+  		position:absolute;
+
+  		width:300px;
+  		height:300px;
+  		margin-top:400px;
+  		margin-left:900px;
+  		/*border:2px solid black;*/
+  		overflow-x: hidden;
+  		overflow-y: hidden;
+  		background-color:black;
+  	}
+
+  	.comp6-type{
+
+  		width:300px;
+  		height:300px;
+  		margin-left:50%;
+
+  		
+  		margin-top:30%;
+  		font-family: Murmure;
+  		font-size: 100px;
+  		
+  		transform: rotate(0deg);
+  		letter-spacing: 10px;
+  		color:white;
+  	}
+
+  	.comp6-type2{
+
+  		width:300px;
+  		height:300px;
+  		margin-left:-50%;
+
+  		
+  		margin-top:-172%;
+  		font-family: Murmure;
+  		font-size: 100px;
+  		
+  		transform: rotate(180deg);
+  		letter-spacing: 10px;
+  		color:white;
+  	}
+
+  	.comp6-type3{
+
+  		width:300px;
+  		height:300px;
+  		margin-left:6%;
+
+  		
+  		margin-top:-100%;
+  		font-family: Murmure;
+  		font-size: 800px;
+  		
+  		transform: rotate(0deg);
+  		letter-spacing: 10px;
+  		color:white;
+  	}
+
+  	.comp6-type4{
+
+  		width:300px;
+  		height:300px;
+  		margin-left:45%;
+
+  		
+  		margin-top:11%;
+  		font-family: Murmure;
+  		font-size: 100px;
+  		
+  		transform: rotate(0deg);
+  		letter-spacing: 10px;
+  		color:white;
+  	}
+
+
+
+
+
+
+  </style>
+</head>
+<body>
+
+	<div class="composition1">
+
+		<div class="comp1-type">pu </div>
+		<div class="comp1-type2">xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx</div>
+
+		<div class="comp1-type2">oooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo</div>
+	</div>
+
+	<div class="composition2">
+
+		<div class="comp2-type">Q </div>
+		<div class="comp2-type2">Q </div>
+		<div class="comp2-type3">l </div>
+		<div class="comp2-type4">l </div>
+	</div>
+
+	<div class="composition3">
+
+		<div class="comp3-type">{} </div>
+		<div class="comp3-type2">{} </div>
+		<div class="comp3-type3">{} </div>
+
+	</div>
+
+	<div class="composition4">
+
+		<div class="comp4-type"> m m m m
+		</div>
+		<div class="comp4-type2"> m m m m
+		</div>
+
+		<div class="comp4-type3"> m m m m
+		</div>
+		<div class="comp4-type4"> m m m m
+		</div>
+		
+	</div>
+	<div class="composition5">
+
+		<div class="comp5-type"> 8
+
+		</div>
+
+		<div class="comp5-type2"> 8
+
+		</div>
+		<div class="comp5-type3"> 8
+
+		</div>
+		<div class="comp5-type4"> 8
+
+		</div>
+		<div class="comp5-type5"> 8
+
+		</div>
+		
+	</div>
+
+	<div class="composition6">
+		<div class="comp6-type"> 3</div>
+		<div class="comp6-type2"> 3</div>
+		<div class="comp6-type3"> H</div>
+		<div class="comp6-type4"> o</div>
+		
+	</div>
+
+
+</body>
+</html>
