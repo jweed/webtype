@@ -1,0 +1,611 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <title>Ornamental Specimen Site</title>
+  <!-- this is where my meta-info lives, but won’t show up on the page itself-->
+
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+
+  <style type="text/css">
+
+   @font-face{
+    font-family:Ornamental;
+    src:url('OrnamentalGX.ttf');
+   }
+
+   @font-face{
+    font-family:Industry;
+    src:url('Industry-Light.ttf');
+
+
+   }
+
+   @keyframes headers{
+0
+    0%{ font-variation-settings: 'SHPE' 100; }
+
+    50%{ font-variation-settings:'SHPE' 0; }
+
+    100%{ font-variation-settings:'SHPE' 100; }
+
+
+   }
+
+   body{
+
+    background-color: black;
+
+    overflow-x: hidden;
+   }
+
+   .header{
+
+   
+
+    width:100vw;
+    height:80vh;
+    margin-top:16%;
+    text-align:center;
+    font-family:'Ornamental';
+    font-variation-settings:'SHPE' 100;
+    font-style:normal;
+    font-size:160px;
+    color:white;
+    animation:headers 6s ease-in 0s infinite alternate;
+
+
+   }
+
+
+
+   .o-pattern{
+   
+    width:90vw;
+    height:76vh;
+    margin-top:10vh;
+    margin-left:4.5vw;
+    margin-right:5vw;
+    
+    font-family:'Ornamental';
+    font-variation-settings:'SHPE' 100;
+    font-style:normal;
+    font-size:160px;
+    color:white;
+    animation:headers 6s ease-in 0s infinite alternate;
+    overflow: hidden;
+    line-height: 110px;
+    letter-spacing: -55px;
+
+   }
+
+   .three-styles{
+
+    width:90vw;
+    height:82vh;
+    margin-top:10vh;
+    margin-left:4.5vw;
+    margin-right:5vw;
+    font-size:140px;
+    font-family:'Ornamental';
+    font-variation-settings:'SHPE' 100;
+    color:white;
+    text-align:center;
+
+    line-height: 100px;
+   }
+
+   .style-one{
+
+    font-variation-settings:'SHPE' 100;
+
+
+   }
+
+   .style-two{
+
+    font-variation-settings:'SHPE' 50;
+
+    
+   }
+
+   .style-three{
+
+    font-variation-settings:'SHPE' 0;
+
+    
+   }
+
+   .horizontal-line{
+
+    position:absolute;
+    margin-top:-49vh;
+    margin-left:-10vw;
+
+    width:39vw;
+    height:2px;
+    background-color: white;
+    transform: rotate(90deg);
+   }
+
+   .horizontal-line-2{
+
+    position:absolute;
+    margin-top:-49vh;
+    margin-left:69vw;
+
+    width:39vw;
+    height:2px;
+    background-color: white;
+    transform: rotate(90deg);
+   }
+
+   .diamond-line{
+
+    position:absolute;
+    margin-top:-82vh;
+    margin-left:6.3vw;
+
+    width:80px;
+    height:80px;
+    background-color: white;
+    transform: rotate(45deg);
+   }
+
+   .circle-line{
+
+    position:absolute;
+    margin-top:-27vh;
+    margin-left:5.6vw;
+
+    width:96px;
+    height:96px;
+    background-color: white;
+    transform: rotate(45deg);
+    border-radius: 50%;
+   }
+
+   .large-border{
+
+    position:absolute;
+
+    width:80%;
+    height:100%;
+    margin-left:5.3%;
+
+   }
+   .screen-border{
+    top:0px;
+    left:0px;
+    position:fixed;
+    width:100%;
+    height:100%;
+    margin:auto;
+   }
+
+   .about-section{
+    width:80vw;
+    height:80vh;
+    margin-top:10vh;
+    margin-left:10vw;
+    margin-right:5vw;
+    font-size:26px;
+    font-family:'ornamental';
+    font-variation-settings:'SHPE' 100;
+    color:white;
+    text-align:left;
+    line-height:40px;}
+
+    .large-o{
+      font-size:200px;
+
+
+    }
+
+    .seperator{
+      width:80vw;
+      height:20vh;
+      margin-left:10vw;
+      font-size:100px;
+    font-family:'ornamental';
+    font-variation-settings:'SHPE' 50;
+    color:white;
+    text-align:center;
+    }
+
+    .alphabet{
+
+      width:50vw;
+      height:40vw;
+      margin-left:24vw;
+      margin-top:13vh;
+      font-size:70px;
+      font-family:'ornamental';
+      font-variation-settings:'SHPE' 100;
+      color:white;
+      text-align:center;
+      animation:headers 6s ease-in 0s infinite alternate;
+
+    }
+
+    .large-shape{
+      width:50vw;
+      height:20vh;
+      margin-left:-68%;
+      margin-top:-150%;
+      font-size:2900px;
+      font-family:'ornamental';
+      font-variation-settings:'SHPE' 100;
+      color:white;
+      text-align:center;
+      line-height:3000px; 
+      transition: font-variation-settings 1s;}
+
+      .large-shape-edit{
+      width:50vw;
+      height:20vh;
+      margin-left:-68%;
+      margin-top:-150%;
+      font-size:2900px;
+      font-family:'ornamental';
+      font-variation-settings:'SHPE' 0;
+      color:white;
+      text-align:center;
+      line-height:3000px;
+      transition: font-variation-settings 1s; 
+
+      }
+
+      .large-shape-2{
+
+      width:50vw;
+      height:20vh;
+      margin-left:28%;
+      margin-top:-12%;
+      font-size:2900px;
+      font-family:'ornamental';
+      font-variation-settings:'SHPE' 100;
+      color:white;
+      text-align:center;
+      line-height:3000px;
+      transition: font-variation-settings 1s;
+
+      }
+
+      .large-shape-2-edit{
+        width:50vw;
+      height:20vh;
+      margin-left:28%;
+      margin-top:-12%;
+      font-size:2900px;
+      font-family:'ornamental';
+      font-variation-settings:'SHPE' 0;
+      color:white;
+      text-align:center;
+      line-height:3000px;
+      transition: font-variation-settings 1s;
+
+      }
+
+      .large-shape-text{
+        position:absolute;
+        width:80vw;
+        height:80vh;
+        margin-top:280vh;
+        margin-left:10vw;
+        margin-right:5vw;
+        font-size:140px;
+        font-family:'ornamental';
+        font-variation-settings:'SHPE' 100;
+        color:white;
+        text-align:center;
+        transition: font-variation-settings 1s;}
+
+        .large-shape-text-edit{
+
+          position:absolute;
+        width:80vw;
+        height:80vh;
+        margin-top:280vh;
+        margin-left:10vw;
+        margin-right:5vw;
+        font-size:140px;
+        font-family:'ornamental';
+        font-variation-settings:'SHPE' 0;
+        color:white;
+        text-align:center;
+        transition: font-variation-settings 1s;
+
+        }
+
+      .shape-button{
+
+        position:relative;
+
+        width:300px;
+        height:50px;
+        margin-left:40%;
+        margin-top:330vh;
+        background-color:black;
+        border:2px solid white;
+        border-radius: 50px;
+        box-sizing: border-box;
+        padding:5px;
+        font-size:30px;
+        font-family:'ornamental';
+        font-variation-settings:'SHPE' 0;
+        color:white;
+        text-align:center;
+
+
+      }
+
+      .shape-button:hover{
+
+        background-color:white;
+        color:black;
+      }
+
+      .input-text{
+
+        width:50%;
+        height:20%;
+        margin-left:22%;
+        margin-top:10%;
+        background-color:blue;
+        
+
+
+      }
+
+      #input-box{
+
+         position:relative;
+
+        width:100%;
+        height:100%;
+
+        background-color:black;
+        font-size:80px;
+        font-family:'ornamental';
+        font-variation-settings:'SHPE' 100;
+        color:white;
+        text-align:center;
+        border:none;
+        padding:5%;
+        border:2px solid white;
+
+      }
+
+      .ornament-box{
+        width:20%
+        height:60%;
+        margin-left:10%;
+        margin-top:-15%;
+        font-size:140px;
+        font-family:'ornamental';
+        font-variation-settings:'SHPE' 100;
+        color:white;
+        
+      }
+
+      .ornament-box-2{
+        width:20%
+        height:60%;
+        margin-left:84%;
+        margin-top:-12.5%;
+        font-size:140px;
+        font-family:'ornamental';
+        font-variation-settings:'SHPE' 100;
+        color:white;
+
+
+      }
+
+      .slidecontainer {
+        width: 100%;
+      }
+
+      .slider {
+        -webkit-appearance: none;
+        width: 60%;
+        height: 5px;
+        margin-left:20%;
+        background: white;
+        outline: none;
+        opacity: 0.99;
+        -webkit-transition: .2s;
+        transition: opacity .2s;
+      }
+
+      
+
+      .slider::-webkit-slider-thumb {
+        -webkit-appearance: none;
+        appearance: none;
+        width: 25px;
+        height: 25px;
+        background: white;
+        cursor: pointer;
+        border-radius: 50%;
+      }
+
+      .slider::-moz-range-thumb {
+        width: 25px;
+        height: 25px;
+        background: white;
+        cursor: pointer;
+        border-radius: 50%;
+      }
+
+
+
+
+
+
+      
+
+   
+
+  </style>
+</head>
+<body>
+
+ 
+ <div class="screen-border">
+    <img src="screen_border-08.png"style="width:100%">
+  </div>
+
+  <div class="header">
+
+    ORNAMENTAL<br> DISPLAY
+
+  </div>
+  <div class="seperator">
+    ##################
+    
+  </div>
+
+  
+
+  <!-- <div class="o-pattern">
+    O O O O O O O O O O O O O O O O O O O O O O O O O O O O O O O O O O O O O O O O 
+  </div> -->
+
+
+ 
+
+ 
+
+  <div class="about-section">
+
+    <span class="large-o">O</span>rnamental is a display serif, featuring a geometric slab serif base with variable decorative elements that shift from a sharp diamond to a rounded circle, and all shapes inbetween. the sleek “base” elements of the font allow for the ornamental elements to demand the visual attention of the reader in all uses. however, while the font utilizes many modular elemts, the strict geometry of the font allows for a swift pattern and structure in all uses. this font is ideal for large scale display text, however each letter can also be isolated to create a pattern, or used as an intricate visual in it’s own right. 
+    
+
+  </div>
+  <div class="seperator">
+    ##################
+    
+  </div>
+
+
+   <div class="three-styles">
+    <span class="style-one">ORNAMENT
+     <br>--<br></span>
+
+   
+    <span class="style-two">ORNAMENT</span>
+   
+    <span class="style-three">   <br>--<br> ORNAMENT</span>
+  </div>
+
+
+
+  <div class="horizontal-line"></div>
+
+  <div class="horizontal-line-2"></div>
+  <div class="diamond-line"></div>
+  <div class="circle-line"></div>
+  <div class="diamond-line" style="margin-left:85.3vw"></div>
+  <div class="circle-line" style="margin-left:85vw"></div>
+  <div class="seperator">
+    ##################
+    
+  </div>
+
+
+   <div class="large-border">
+    <img src='small-frame-09.png'style="width:110%">
+  </div>
+
+  <div class="alphabet">
+    A B C D E F G H I J K L M N O P Q R S T U V W X Y Z
+  </div>
+
+   <div class="seperator">
+    ##################
+    
+  </div>
+
+  <div class="large-shape">
+    .
+  </div>
+
+  <div class="large-shape-2">
+    .
+  </div>
+
+  <div class="large-shape-text">
+    MORE <br> DECOR
+
+  </div>
+
+    <div class="shape-button">
+    reconstruct
+  </div>
+<br><br><br><br><br><br><br><br><br><br><br><br>
+  <div class="seperator">
+    ##################
+    
+  </div>
+<div class="input-text">
+   <input type="text" id=input-box value="TYPE HERE">
+
+</div>
+
+<div class="ornament-box">
+  *
+  </div>
+
+  <div class="ornament-box-2">
+  *
+  </div>
+
+  <br><br><br><br><br><br><br><br><br><br>
+
+  <p>Custom range slider:</p>
+  <input type="range" min="0" max="100" value="50" class="slider">
+</div>
+
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+
+
+  
+
+
+
+
+
+
+ 
+
+
+
+
+  
+
+</body>
+<script>
+
+   $('.shape-button').click(function(){
+
+            $('.large-shape').toggleClass('large-shape-edit');
+
+         });
+
+    $('.shape-button').click(function(){
+
+            $('.large-shape-2').toggleClass('large-shape-2-edit');
+
+         });
+
+     $('.shape-button').click(function(){
+
+            $('.large-shape-text').toggleClass('large-shape-text-edit');
+
+         });
+  </script>
+</html>
