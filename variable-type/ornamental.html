@@ -2,6 +2,7 @@
 <html>
 <head>
   <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width">
   <title>Ornamental Specimen Site</title>
   <!-- this is where my meta-info lives, but won’t show up on the page itself-->
 
@@ -35,6 +36,9 @@
    }
 
    body{
+
+    width:100vw;
+    height:100vh;
 
     background-color: black;
 
@@ -440,6 +444,126 @@
         border-radius: 50%;
       }
 
+      .frame-2{
+
+        position:fixed;
+        top:0px;
+        left:0px;
+        width:99vw;
+        height:99vh;
+        border: 46px solid black;
+        margin:auto;
+        overflow:hidden;
+       
+      }
+
+      .frame{
+
+        position:fixed;
+        top:0px;
+        left:0px;
+        width:99vw;
+        height:99vh;
+        border: 1px solid black;
+        margin:auto;
+        overflow:hidden;
+       
+      }
+
+      .frame-top{
+        position:fixed;
+        width:100%;
+        height:10vw;
+
+        left:0;
+        line-height:8vw;
+
+
+        font-size:10vw;
+        font-family:'ornamental';
+        font-variation-settings:'SHPE' 0;
+        color:white;
+        letter-spacing:-3vw;
+        overflow: hidden;
+        
+
+      }
+
+      .frame-bottom{
+        position:fixed;
+        width:100%;
+        bottom:0;
+        left:0;
+        letter-spacing:-3vw;
+
+
+        font-size:10vw;
+        font-family:'ornamental';
+        font-variation-settings:'SHPE' 0;
+        color:white;
+        overflow:hidden;}
+
+        .frame-left{
+        position:fixed;
+        width:10vw;
+        height:86vh;
+        top:0;
+        left:0;
+        line-height:9.4vw;
+        overflow:hidden;
+
+        font-size:10vw;
+        font-family:'ornamental';
+        font-variation-settings:'SHPE' 0;
+        color:white;}
+
+
+        .frame-right{
+        position:fixed;
+        width:8vw;
+        height:89vh;
+        top:0;
+        right:0;
+        line-height:9.4vw;
+        overflow:hidden;
+
+        font-size:10vw;
+        font-family:'ornamental';
+        font-variation-settings:'SHPE' 0;
+        color:white;
+
+        }
+        .frame-background{
+          position:fixed;
+          width:99vw;
+          height:99vh;
+          top:0;
+          left:0;
+          border:3vw solid black;
+        }
+
+       /* .container{
+          position:absolute;
+          width:80vw;
+          height:80vh;
+          margin-top:10vh;
+          margin-left:10vw;
+          border:5px solid blue;
+          overflow-y: scroll;
+
+        }*/
+
+/* RESPONSIVE*/
+
+@media screen and (max-width:850px){
+
+  .header{
+
+    font-size:100px;
+  }
+
+
+}
 
 
 
@@ -454,9 +578,11 @@
 <body>
 
  
- <div class="screen-border">
+ <!-- <div class="screen-border">
     <img src="screen_border-08.png"style="width:100%">
-  </div>
+  </div> -->
+
+  <div class="container">
 
   <div class="header">
 
@@ -567,9 +693,30 @@
 
   <p>Custom range slider:</p>
   <input type="range" min="0" max="100" value="50" class="slider">
+
 </div>
 
-<br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+
+<div class="frame-2"></div>
+<div class="frame">
+
+  <!-- <div class="frame-background"></div> -->
+  
+  <div class="frame-top">
+    ? ? ? ? ? ? ? ? ? ? ? ? ? ? 
+  </div>
+
+  <div class="frame-bottom">
+    ? ? ? ? ? ? ? ? ? ? ? ? ? ? 
+  </div>
+  <div class="frame-left">
+    ? ? ? ? ? ? ? ? ? ? ? ? ? ? ? ? ? ?
+  </div>
+  <div class="frame-right">
+    ? ? ? ? ? ? ? ? ? ? ? ? ? ? ? ? ? ?
+  </div>
+</div>
 
 
 
