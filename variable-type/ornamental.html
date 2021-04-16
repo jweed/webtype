@@ -42,7 +42,7 @@
 
     background-color: black;
 
-    overflow-x: hidden;
+    overflow:hidden;
    }
 
    .header{
@@ -88,17 +88,17 @@
    .three-styles{
 
     width:90vw;
-    height:82vh;
+    height:70vh;
     margin-top:10vh;
     margin-left:4.5vw;
     margin-right:5vw;
-    font-size:140px;
+    font-size:100px;
     font-family:'Ornamental';
     font-variation-settings:'SHPE' 100;
     color:white;
     text-align:center;
 
-    line-height: 100px;
+    line-height: 80px;
    }
 
    .style-one{
@@ -122,34 +122,67 @@
     
    }
 
+   .three-styles-decor{
+    display:none;
+
+    position:relative;
+    width:90vw;
+    height:90vh;
+    margin-left:5vw;
+   }
+
    .horizontal-line{
 
-    position:absolute;
+    position:relative;
     margin-top:-49vh;
     margin-left:-10vw;
 
     width:39vw;
     height:2px;
-    background-color: white;
+    background-color: transparent;
     transform: rotate(90deg);
    }
 
    .horizontal-line-2{
 
-    position:absolute;
+    position:relative;
     margin-top:-49vh;
     margin-left:69vw;
 
     width:39vw;
     height:2px;
-    background-color: white;
+    background-color: transparent;
     transform: rotate(90deg);
    }
 
    .diamond-line{
 
-    position:absolute;
-    margin-top:-82vh;
+    position:relative;
+    margin-top:10vh;
+    margin-left:6.3vw;
+
+    width:80px;
+    height:80px;
+    background-color: transparent;
+    transform: rotate(45deg);
+   }
+
+   .circle-line{
+
+    position:relative;
+    margin-top:40vh;
+    margin-left:5.6vw;
+
+    width:96px;
+    height:96px;
+    background-color: transparent;
+    transform: rotate(45deg);
+    border-radius: 50%;
+   }
+   .diamond-line-2{
+
+    position:relative;
+    margin-top:10vh;
     margin-left:6.3vw;
 
     width:80px;
@@ -158,10 +191,10 @@
     transform: rotate(45deg);
    }
 
-   .circle-line{
+   .circle-line-2{
 
-    position:absolute;
-    margin-top:-27vh;
+    position:relative;
+    margin-top:40vh;
     margin-left:5.6vw;
 
     width:96px;
@@ -173,11 +206,11 @@
 
    .large-border{
 
-    position:absolute;
+    position:relative;
 
     width:80%;
     height:100%;
-    margin-left:5.3%;
+    margin-left:8.5%;
 
    }
    .screen-border{
@@ -209,10 +242,12 @@
     }
 
     .seperator{
+      position:relative;
       width:80vw;
       height:20vh;
       margin-left:10vw;
-      font-size:100px;
+      margin-bottom:10vh;
+      font-size:7.5vw;
     font-family:'ornamental';
     font-variation-settings:'SHPE' 50;
     color:white;
@@ -222,9 +257,11 @@
     .alphabet{
 
       width:50vw;
-      height:40vw;
+      height:60vh;
+      margin-top:-88vh;
+      margin-bottom:10vh;
       margin-left:24vw;
-      margin-top:13vh;
+      
       font-size:70px;
       font-family:'ornamental';
       font-variation-settings:'SHPE' 100;
@@ -235,69 +272,80 @@
     }
 
     .large-shape{
-      width:50vw;
-      height:20vh;
-      margin-left:-68%;
-      margin-top:-150%;
-      font-size:2900px;
+      width:130vw;
+      height:81.5vh;
+      margin-left:-110vw;
+      margin-top:0%;
+      font-size:2500px;
       font-family:'ornamental';
       font-variation-settings:'SHPE' 100;
       color:white;
-      text-align:center;
-      line-height:3000px; 
-      transition: font-variation-settings 1s;}
+      text-align:right;
+      line-height:1500px; 
+      overflow:hidden;
+
+      transition: font-variation-settings 1s;
+      }
 
       .large-shape-edit{
-      width:50vw;
-      height:20vh;
-      margin-left:-68%;
-      margin-top:-150%;
-      font-size:2900px;
+      width:130vw;
+      height:81.5vh;
+      margin-left:-110vw;
+      margin-top:0%;
+      font-size:2500px;
       font-family:'ornamental';
       font-variation-settings:'SHPE' 0;
       color:white;
-      text-align:center;
-      line-height:3000px;
-      transition: font-variation-settings 1s; 
+      text-align:right;
+      line-height:1500px; 
+      overflow:hidden;
 
+      transition: font-variation-settings 1s;
+      
       }
 
       .large-shape-2{
 
       width:50vw;
-      height:20vh;
-      margin-left:28%;
-      margin-top:-12%;
-      font-size:2900px;
+      height:81.5vh;
+      margin-left:77vw;
+      margin-top:-46%;
+      font-size:2500px;
       font-family:'ornamental';
       font-variation-settings:'SHPE' 100;
       color:white;
-      text-align:center;
-      line-height:3000px;
+      text-align:left;
+      line-height:1500px; 
+      overflow:hidden;
+
       transition: font-variation-settings 1s;
+      
 
       }
 
       .large-shape-2-edit{
-        width:50vw;
-      height:20vh;
-      margin-left:28%;
-      margin-top:-12%;
-      font-size:2900px;
+         width:50vw;
+      height:81.5vh;
+      margin-left:77vw;
+      margin-top:-46%;
+      font-size:2500px;
       font-family:'ornamental';
       font-variation-settings:'SHPE' 0;
       color:white;
-      text-align:center;
-      line-height:3000px;
+      text-align:left;
+      line-height:1500px; 
+      overflow:hidden;
+
       transition: font-variation-settings 1s;
+      
 
       }
 
       .large-shape-text{
-        position:absolute;
+        position:relative;
         width:80vw;
-        height:80vh;
-        margin-top:280vh;
+        height:20vh;
+        margin-top:-65vh;
         margin-left:10vw;
         margin-right:5vw;
         font-size:140px;
@@ -309,10 +357,10 @@
 
         .large-shape-text-edit{
 
-          position:absolute;
+        position:relative;
         width:80vw;
-        height:80vh;
-        margin-top:280vh;
+        height:20vh;
+        margin-top:-65vh;
         margin-left:10vw;
         margin-right:5vw;
         font-size:140px;
@@ -331,7 +379,8 @@
         width:300px;
         height:50px;
         margin-left:40%;
-        margin-top:330vh;
+        margin-top:30vh;
+        margin-bottom:15vh;
         background-color:black;
         border:2px solid white;
         border-radius: 50px;
@@ -358,6 +407,7 @@
         height:20%;
         margin-left:22%;
         margin-top:10%;
+        margin-bottom:30vh;
         background-color:blue;
         
 
@@ -370,6 +420,7 @@
 
         width:100%;
         height:100%;
+
 
         background-color:black;
         font-size:80px;
@@ -387,7 +438,8 @@
         width:20%
         height:60%;
         margin-left:10%;
-        margin-top:-15%;
+        margin-top:-23%;
+        
         font-size:140px;
         font-family:'ornamental';
         font-variation-settings:'SHPE' 100;
@@ -400,6 +452,7 @@
         height:60%;
         margin-left:84%;
         margin-top:-12.5%;
+        margin-bottom:10vh;
         font-size:140px;
         font-family:'ornamental';
         font-variation-settings:'SHPE' 100;
@@ -410,6 +463,7 @@
 
       .slidecontainer {
         width: 100%;
+        margin-bottom:10vh;
       }
 
       .slider {
@@ -466,7 +520,7 @@
         left:0px;
         width:99vw;
         height:99vh;
-        border: 1px solid black;
+        /*border: 1px solid black;*/
         margin:auto;
         overflow:hidden;
         pointer-events:none;
@@ -513,7 +567,7 @@
         .frame-left{
         position:fixed;
         width:10vw;
-        height:86vh;
+        height:100vh;
         top:0;
         left:0;
         line-height:9.4vw;
@@ -529,7 +583,7 @@
         .frame-right{
         position:fixed;
         width:8vw;
-        height:89vh;
+        height:100vh;
         top:0;
         right:0;
         line-height:9.4vw;
@@ -551,16 +605,16 @@
           border:3vw solid black;
         }
 
-       /* .container{
-          position:absolute;
-          width:80vw;
-          height:80vh;
-          margin-top:10vh;
-          margin-left:10vw;
-          border:5px solid blue;
-          overflow-y: scroll;
+        .container{
+          position:relative
+          width:100vw;
+          height:100vh;
+          top:0;
+          left:0;
+          /*border:5px solid blue;*/
+          overflow-x:hidden;
 
-        }*/
+        }
 
 /* RESPONSIVE*/
 
@@ -568,8 +622,415 @@
 
   .header{
 
-    font-size:100px;
+    width:100vw;
+    height:20vh;
+    margin-top:16%;
+    text-align:center;
+    font-family:'Ornamental';
+    font-variation-settings:'SHPE' 100;
+    font-style:normal;
+    font-size:45px;
+    color:white;
+    animation:headers 6s ease-in 0s infinite alternate;
   }
+
+  .three-styles{
+
+    font-size:45px;
+
+    width:90vw;
+    height:64vh;
+    margin-top:10vh;
+    margin-left:4.5vw;
+    margin-right:5vw;
+    margin-bottom:10vh;
+    
+    font-family:'Ornamental';
+    font-variation-settings:'SHPE' 100;
+    color:white;
+    text-align:center;
+
+    line-height: 100px;
+  }
+
+ 
+
+   .large-shape-text{
+        position:relative;
+        width:80vw;
+        height:20vh;
+        margin-top:-20vh;
+        margin-left:8vw;
+        margin-right:5vw;
+        font-size:35px;
+        font-family:'ornamental';
+        font-variation-settings:'SHPE' 100;
+        color:white;
+        text-align:center;
+        transition: font-variation-settings 1s;}
+
+        .large-shape-text-edit{
+
+         position:relative;
+        width:80vw;
+        height:20vh;
+        margin-top:-20vh;
+        margin-left:8vw;
+        margin-right:5vw;
+        font-size:35px;
+        font-family:'ornamental';
+        font-variation-settings:'SHPE' 0;
+        color:white;
+        text-align:center;
+        transition: font-variation-settings 1s;
+
+        }
+
+        .large-shape{
+      width:130vw;
+      height:29vh;
+      margin-left:-100vw;
+      margin-top:0%;
+      font-size:1000px;
+      font-family:'ornamental';
+      font-variation-settings:'SHPE' 100;
+      color:white;
+      text-align:right;
+      line-height:600px; 
+      overflow:hidden;
+
+      transition: font-variation-settings 1s;
+      }
+
+      .large-shape-edit{
+      width:130vw;
+      height:29vh;
+      margin-left:-100vw;
+      margin-top:0%;
+      font-size:1000px;
+      font-family:'ornamental';
+      font-variation-settings:'SHPE' 0;
+      color:white;
+      text-align:right;
+      line-height:600px; 
+      overflow:hidden;
+
+      transition: font-variation-settings 1s;
+    
+      }
+
+      .large-shape-2{
+
+      width:30vw;
+      height:29vh;
+      margin-left:65vw;
+      margin-top:-63%;
+      font-size:1000px;
+      font-family:'ornamental';
+      font-variation-settings:'SHPE' 100;
+      color:white;
+      text-align:left;
+      line-height:600px; 
+      overflow:hidden;
+
+      transition: font-variation-settings 1s;
+      
+
+      }
+
+      .large-shape-2-edit{
+         width:30vw;
+      height:29vh;
+      margin-left:65vw;
+      margin-top:-63%;
+      font-size:1000px;
+      font-family:'ornamental';
+      font-variation-settings:'SHPE' 0;
+      color:white;
+      text-align:left;
+      line-height:600px; 
+      overflow:hidden;
+
+      transition: font-variation-settings 1s;
+      
+
+      }
+
+
+  
+
+      .alphabet{
+        width:46vw;
+        height:16vh;
+        margin-left:26vw;
+        margin-top:-17vh;
+
+        font-size:24px;
+        line-height: 24px;
+        
+        letter-spacing:-2px;
+      }
+
+       
+      .ornament-box{
+        width:12vw;
+        height:10vh;
+        margin-left:10%;
+        margin-top:-37%;
+        margin-bottom:0vh;
+        font-size:70px;
+        font-family:'ornamental';
+        font-variation-settings:'SHPE' 100;
+        color:white;
+        line-height:60px;
+        /*background-color:blue;*/
+        text-align:center;
+        
+      }
+
+      .ornament-box-2{
+        width:12vw;
+        height:10vh;
+        margin-left:78%;
+        margin-top:-22%;
+        margin-bottom:2vh;
+        font-size:70px;
+        font-family:'ornamental';
+        font-variation-settings:'SHPE' 100;
+        color:white;
+        line-height:60px;
+        /*background-color:blue;*/
+        text-align:center;
+
+
+      }
+
+      .about-section{
+    width:80vw;
+    height:60vh;
+    margin-top:10vh;
+    margin-left:10vw;
+    margin-right:5vw;
+    font-size:14px;
+    font-family:'ornamental';
+    font-variation-settings:'SHPE' 100;
+    color:white;
+    text-align:left;
+    line-height:20px;}
+
+    .large-o{
+      font-size:80px;
+
+
+    }
+
+    .diamond-line{
+
+    position:relative;
+    margin-top:-90vh;
+    margin-left:6.3vw;
+
+    width:50px;
+    height:50px;
+    background-color: white;
+    transform: rotate(45deg);
+   }
+
+   .circle-line{
+
+    position:relative;
+    margin-top:63vh;
+    margin-left:5.6vw;
+
+    width:65px;
+    height:65px;
+    background-color: white;
+    transform: rotate(45deg);
+    border-radius: 50%;
+   }
+
+   .horizontal-line{
+
+    position:relative;
+    margin-top:0vh;
+    margin-left:-6.5vw;
+
+    width:39vw;
+    height:2px;
+    background-color: transparent;
+    transform: rotate(90deg);
+   }
+
+   .horizontal-line-2{
+
+    position:relative;
+    margin-top:0vh;
+    margin-left:52vw;
+
+    width:39vw;
+    height:2px;
+    background-color: transparent;
+    transform: rotate(90deg);
+   }
+
+    .seperator{
+      position:relative;
+      width:80vw;
+      height:5vh;
+      margin-left:6vw;
+      margin-bottom: 5vh;
+      font-size:7.5vw;
+    font-family:'ornamental';
+    font-variation-settings:'SHPE' 50;
+    color:white;
+    text-align:center;
+    }
+
+    .three-styles-decor{
+      display:inline-block;
+      width:100vw;
+      top:8vh;
+      height:0vh;
+    }
+
+
+
+    .large-border{
+
+    position:relative;
+
+    width:80%;
+    height:20%;
+    margin-left:10%;
+
+   }
+
+    .shape-button{
+
+        position:relative;
+        width:40vw;
+        height:10vw;
+        top:0vh;
+        margin-top:0;
+        margin-left:28vw;
+        margin-bottom:5vh;
+       
+        background-color:black;
+        border:2px solid white;
+        border-radius: 50px;
+        /*box-sizing: border-box;*/
+        padding:2%;
+        font-size:15px;
+        font-family:'ornamental';
+        font-variation-settings:'SHPE' 0;
+        color:white;
+        text-align:center;
+
+
+      }
+
+
+      .slidecontainer {
+        width: 100%;
+        margin-bottom:5vh;
+      }
+
+      .slider {
+        -webkit-appearance: none;
+        width: 60%;
+        height: 2px;
+        margin-left:20%;
+        background: white;
+        outline: none;
+        opacity: 0.99;
+        -webkit-transition: .2s;
+        transition: opacity .2s;
+      }
+
+      
+
+      .slider::-webkit-slider-thumb {
+        -webkit-appearance: none;
+        appearance: none;
+        width: 25px;
+        height: 25px;
+        background: white;
+        cursor: pointer;
+        border-radius: 50%;
+      }
+
+      .slider::-moz-range-thumb {
+        width: 25px;
+        height: 25px;
+        background: white;
+        cursor: pointer;
+        border-radius: 50%;
+      }
+
+       .input-text{
+
+        width:50%;
+        height:6%;
+        margin-left:22%;
+        margin-top:10%;
+        margin-bottom:10vh;
+        background-color:blue;
+        
+
+
+      }
+
+      #input-box{
+
+        position:relative;
+
+        width:100%;
+        height:100%;
+        margin-bottom:5vh;
+
+        background-color:black;
+        font-size:30px;
+        font-family:'ornamental';
+        font-variation-settings:'SHPE' 100;
+        color:white;
+        text-align:center;
+        border:none;
+        padding:5%;
+        border:2px solid white;
+
+      }
+
+      .diamond-line-2{
+        display:none;
+
+    position:relative;
+    margin-top:10vh;
+    margin-left:6.3vw;
+
+    width:80px;
+    height:80px;
+    background-color: white;
+    transform: rotate(45deg);
+   }
+
+   .circle-line-2{
+
+    display:none;
+
+    position:relative;
+    margin-top:40vh;
+    margin-left:5.6vw;
+
+    width:96px;
+    height:96px;
+    background-color: white;
+    transform: rotate(45deg);
+    border-radius: 50%;
+   }
+
+
+
+
 
 
 }
@@ -599,7 +1060,7 @@
 
   </div>
   <div class="seperator">
-    ##################
+    ###############
     
   </div>
 
@@ -621,7 +1082,7 @@
 
   </div>
   <div class="seperator">
-    ##################
+    ###############
     
   </div>
 
@@ -629,13 +1090,12 @@
    <div class="three-styles">
     <span class="style-one">ORNAMENT
      <br>--<br></span>
-
-   
     <span class="style-two">ORNAMENT</span>
-   
-    <span class="style-three">   <br>--<br> ORNAMENT</span>
+   <span class="style-three">   <br>--<br> ORNAMENT</span>
   </div>
 
+
+<div class="three-styles-decor">
 
 
   <div class="horizontal-line"></div>
@@ -643,16 +1103,18 @@
   <div class="horizontal-line-2"></div>
   <div class="diamond-line"></div>
   <div class="circle-line"></div>
-  <div class="diamond-line" style="margin-left:85.3vw"></div>
-  <div class="circle-line" style="margin-left:85vw"></div>
+  <div class="diamond-line" style="margin-left:65vw;margin-top:-78vh"></div>
+  <div class="circle-line" style="margin-left:62vw;margin-top:64vh"></div>
+
+</div>
   <div class="seperator">
-    ##################
+    ###############
     
   </div>
 
 
    <div class="large-border">
-    <img src='small-frame-09.png'style="width:110%">
+    <img src='small-frame-09.png'style="width:100%">
   </div>
 
   <div class="alphabet">
@@ -660,16 +1122,16 @@
   </div>
 
    <div class="seperator">
-    ##################
+    ###############
     
   </div>
 
   <div class="large-shape">
-    .
+    %
   </div>
 
   <div class="large-shape-2">
-    .
+    %
   </div>
 
   <div class="large-shape-text">
@@ -680,9 +1142,9 @@
     <div class="shape-button">
     reconstruct
   </div>
-<br><br><br><br><br><br><br><br><br><br><br><br>
+
   <div class="seperator">
-    ##################
+    ###############
     
   </div>
 <div class="input-text">
@@ -698,16 +1160,23 @@
   *
   </div>
 
-  <br><br><br><br><br><br><br><br><br><br>
+  <div class="slidecontainer">
 
-  <p>Custom range slider:</p>
-  <input type="range" min="0" max="100" value="50" class="slider">
+  
+
+  
+  <input type="range" min="0" max="100" value="50" class="slider"></div>
+
+  <div class="seperator">
+    ###############
+    
+  </div>
 
 </div>
 
 
 
-<div class="frame-2"></div>
+<!-- <div class="frame-2"></div> -->
 <div class="frame">
 
   <!-- <div class="frame-background"></div> -->
@@ -720,10 +1189,10 @@
     ? ? ? ? ? ? ? ? ? ? ? ? ? ? 
   </div>
   <div class="frame-left">
-    ? ? ? ? ? ? ? ? ? ? ? ? ? ? ? ? ? ?
+    ? ? ? ? ? ? ? ? ? ? ? ? ? ? ? ? ? ? ? ? ? ? ?
   </div>
   <div class="frame-right">
-    ? ? ? ? ? ? ? ? ? ? ? ? ? ? ? ? ? ?
+    ? ? ? ? ? ? ? ? ? ? ? ? ? ? ? ? ? ? ? ? ? ? ?
   </div>
 </div>
 

@@ -4,7 +4,9 @@ DisplayStrings = (
 U,
 u,
 v,
-V
+V,
+".",
+"%"
 );
 customParameters = (
 {
@@ -15801,17 +15803,65 @@ unicode = 0020;
 },
 {
 glyphname = percent;
+lastChange = "2021-04-16 13:30:48 +0000";
 layers = (
 {
 layerId = "16A4F72C-6E52-4851-BC55-1EF2E1D4C4EC";
-width = 600;
+paths = (
+{
+closed = 1;
+nodes = (
+"118 700 LINE",
+"119 699 LINE",
+"119 466 LINE",
+"157 505 OFFCURVE",
+"196 544 OFFCURVE",
+"235 584 CURVE",
+"195 623 OFFCURVE",
+"155 663 OFFCURVE",
+"118 700 CURVE",
+"79 662 OFFCURVE",
+"39 622 OFFCURVE",
+"0 584 CURVE",
+"38 544 OFFCURVE",
+"79 505 OFFCURVE",
+"117 466 CURVE",
+"117 699 LINE"
+);
+}
+);
+width = 235;
 },
 {
 layerId = "97FB2712-2ECD-43E8-8EDB-5EDF297461B7";
-width = 600;
+paths = (
+{
+closed = 1;
+nodes = (
+"118 700 LINE",
+"119 699 LINE",
+"119 466 LINE",
+"177 466 OFFCURVE",
+"235 526 OFFCURVE",
+"235 584 CURVE",
+"235 642 OFFCURVE",
+"176 700 OFFCURVE",
+"118 700 CURVE",
+"60 700 OFFCURVE",
+"0 642 OFFCURVE",
+"0 584 CURVE",
+"0 526 OFFCURVE",
+"59 466 OFFCURVE",
+"117 466 CURVE",
+"117 699 LINE"
+);
+}
+);
+width = 235;
 }
 );
 unicode = 0025;
+changeCount = 108;
 },
 {
 glyphname = newGlyph;
