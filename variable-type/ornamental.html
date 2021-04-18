@@ -1183,7 +1183,7 @@
   
 
   
-  <input type="range" min="0" max="100" value="50" class="slider"></div>
+  <input data-type="SHPE" type="range" min="0" max="100" value="50" class="slider"value="50"></div>
 
   <div class="seperator">
     ###############
@@ -1250,5 +1250,20 @@
             $('.large-shape-text').toggleClass('large-shape-text-edit');
 
          });
+
+     $('.slider').on('input', function(){
+
+      let value = parseInt($(this).val());
+
+      const slidertype = $(this).data('type');
+
+      console.log(value);
+      console.log(slidertype,value);
+      // var shapestyles = {"'font-variation-settings'": "'SHPE' " + value};
+      // console.log(shapestyles);
+
+      $('#input-box').css("font-variation-settings", "'SHPE' " + value);
+     });
+
   </script>
 </html>
