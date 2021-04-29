@@ -18,11 +18,19 @@
         src:url('CircularStd-Book.ttf');
       }
 
+      @font-face{
+
+        font-family:Crushed;
+        src:url('Crushed-Regular.ttf');
+      }
+
       h1{
 
-        font-family:'Murmure';
-        color:black;
-        font-size:8vw;
+        font-family:'Crushed';
+        color:white;
+        font-size:100px;
+        -webkit-text-stroke-width: 1px;
+      -webkit-text-stroke-color: black;
         
         text-align:center;
       }
@@ -34,13 +42,14 @@
         text-align:left;
         padding-top:2%;
         margin-left:7%;
+
       }
 
       p{
         font-family:'Circular';
         color:black;
         font-size:2.5vw;
-        text-align:left;
+        text-align:center;
         margin-left:5%;}
 
       a{
@@ -64,11 +73,12 @@
 
 
       .content{
-        position:absolute;
+        
         width:90vw;
-        height:60vh;
+        
         border:4px solid black;
-        margin-left:5vw;
+        margin:5vw;
+        margin-bottom:100px;
         box-sizing: border-box;
 
 
@@ -86,7 +96,7 @@
  <!--  <section id="container"> -->
 
     <!-- about me-->
-    <h1> Hi, and welcome to My [Jordan's] Site </h1>  
+    <h1> Hi, and welcome to Jordan's Site </h1>  
     <p class="desc"> Browse some of my projects from this semester below.</p>
 
     <div class="content">
@@ -118,10 +128,17 @@
         <div id="projects">
           <h3>Projects</h3>
           <ul>
-           <a href="./community-archive/community-archive.html" target="_blank">Community Archive (in progress)</a>
+           <a href="./community-archive/community-archive.html" target="_blank">Community Archive</a>
          </ul>
+
          <ul>
-          <a href="./variable-type/ornamental.html" target="_blank"> Variable Type Specimen</a></ul>
+          <a href="./variable-type/ornamental.html" target="_blank"> Variable Type Specimen</a>
+         </ul>
+
+         <ul>
+          <a href="./machine/uselessmachine.html" target="_blank"> Useless Machine</a>
+         </ul>
+
         </div>
 
          

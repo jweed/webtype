@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <title>Useless Machine</title>
+  <!-- this is where my meta-info lives, but won’t show up on the page itself-->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
+  <style type="text/css">
+
+    @font-face{
+
+      font-family:Murmure;
+      src:url('le-murmure.otf');
+    }
+
+
+    .body{
+      width:100vw;
+      height:100vh;
+      background-color:white;
+
+    }
+
+    .about{
+      width:60%;
+      margin:auto;
+      font-family:Murmure;
+      color:white;
+      font-size:200px;
+      padding:10px;
+      -webkit-text-stroke-width: 1px;
+      -webkit-text-stroke-color: black;
+      text-align:center;
+      border:1px solid black;
+      box-sizing: border-box;
+    }
+
+    .steps-1{
+      width:60%;
+      margin:auto;
+      font-family:Murmure;
+      background-color:blue;
+      color:white;
+      font-size:80px;
+       padding:10px;
+      -webkit-text-stroke-width: 1px;
+      -webkit-text-stroke-color: black;
+      text-align:center;
+    box-sizing: border-box;}
+
+    .steps-2{
+      width:60%;
+      margin:auto;
+      font-family:Murmure;
+      background-color:blue;
+      color:white;
+      font-size:80px;
+       padding:10px;
+      -webkit-text-stroke-width: 1px;
+      -webkit-text-stroke-color: black;
+      text-align:center;
+    box-sizing: border-box;}
+
+    .steps-3{
+      width:60%;
+      margin:auto;
+      font-family:Murmure;
+      background-color:white;
+      border:1px solid black;
+      color:white;
+      font-size:80px;
+       padding:50px;
+      -webkit-text-stroke-width: 1px;
+      -webkit-text-stroke-color: black;
+      text-align:center;
+      box-sizing: border-box;
+    }
+
+
+    .upload{
+
+      width:60%;
+      margin:auto;
+      font-family:Murmure;
+      color:black;
+      font-size:200px;
+      padding:10px;
+      
+      text-align:center;
+      border:1px solid black;
+    box-sizing: border-box
+
+
+    }
+
+      
+
+    .upload-image{
+
+      width:100%;
+      margin:auto;
+      font-family:Murmure;
+      color:black;
+      font-size:200px;
+      padding:10px;
+      
+      text-align:center;
+      
+    box-sizing: border-box
+
+      }
+
+    .myImg{
+
+      width:100%;
+      font-family:sans-serif;
+        font-size: 50px;
+
+
+      }
+
+      .image-gallery-container{
+
+        width:90%;
+        height:150px;
+        margin:auto;
+        background-color:white;
+        overflow:auto;
+       
+
+
+
+      }
+
+      .image-gallery{
+        
+
+        width:100%;
+        height:150px;
+        overflow:scroll;
+
+      }
+
+     
+
+      .input{
+
+        font-family:sans-serif;
+        font-size: 20px;
+        
+        text-align:center;
+
+
+      }
+
+      .input-off{
+        display:none;
+      }
+
+      .image-box{
+
+        width:90%;
+        
+        /*border:1px solid black;*/
+        margin:auto;
+
+      }
+
+      .restart{
+        width:60%;
+      margin:auto;
+      font-family:Murmure;
+      background-color:blue;
+      color:white;
+      font-size:80px;
+       padding:10px;
+      -webkit-text-stroke-width: 1px;
+      -webkit-text-stroke-color: black;
+      text-align:center;
+    box-sizing: border-box;
+
+
+      }
+
+      .button{
+        cursor:pointer;
+      }
+
+      
+
+      
+
+
+
+
+
+  
+
+  </style>
+</head>
+<body>
+
+  <div class="about">
+    BEAUTY DESK
+  </div>
+
+  <div class="steps-1">
+    STEP 1
+  </div>
+
+  <div class="upload">
+    <div class="upload-image">
+
+        <input type='file'  class="input"/>
+
+        <img class="myImg" src="#">
+  </div>
+</div>
+
+<div class="steps-2">
+
+  STEP 2<br><br>
+
+  <div class="image-gallery-container">
+    <div class="image-gallery">
+
+    <img src="image_set-12.png"style="width:100px" class="image-1">
+    <img src="image_set-26.png"style="width:100px">
+    <img src="image_set-18.png"style="width:100px">
+    <img src="image_set-04.png"style="width:100px">
+    <img src="image_set-29.png"style="width:100px">
+    <img src="image_set-07.png"style="width:100px">
+    <img src="image_set_2-01.png"style="width:100px">
+    <img src="image_set-16.png"style="width:100px">
+    <img src="image_set-05.png"style="width:100px">
+    <img src="image_set-19.png"style="width:100px">
+    <img src="image_set-06.png"style="width:100px">
+    <img src="image_set-11.png"style="width:100px">
+    <img src="image_set-27.png"style="width:100px">
+    <img src="image_set-10.png"style="width:100px">
+    <img src="image_set-09.png"style="width:100px">
+    <img src="image_set-24.png"style="width:100px">
+    <img src="image_set-14.png"style="width:100px">
+    <img src="image_set-02.png"style="width:100px">
+    <img src="image_set-01.png"style="width:100px">
+    <img src="image_set-08.png"style="width:100px">
+    <img src="image_set-28.png"style="width:100px">
+    <img src="image_set-21.png"style="width:100px">
+    <img src="image_set-22.png"style="width:100px">
+    <img src="image_set-13.png"style="width:100px">
+    <img src="image_set-30.png"style="width:100px">
+    <img src="image_set-20.png"style="width:100px">
+    <img src="image_set-23.png"style="width:100px">
+    <img src="image_set-03.png"style="width:100px">
+    <img src="image_set_2-02.png"style="width:100px">
+    <img src="image_set-15.png"style="width:100px">
+  </div>
+  </div><br>
+   CHOOSE ACCESSORIES
+  </div>
+
+  <div class="steps-3">
+
+    STEP 3 <br><br>
+
+    DECORATE IMAGE
+
+    <div class="image-box">
+     
+
+  </div></div>
+
+  <div class="restart">
+
+    <span class="button">RESTART</span>
+
+  </div>
+
+
+
+
+
+ 
+</body>
+<script>
+
+  window.addEventListener('load', function() {
+  document.querySelector('input[type="file"]').addEventListener('change', function() {
+      if (this.files && this.files[0]) {
+          var img = document.querySelector('img');
+          img.onload = () => {
+              URL.revokeObjectURL(img.src);  // no longer needed, free memory
+          }
+
+          img.src = URL.createObjectURL(this.files[0]);
+
+           $(".upload-image" ).clone().appendTo( ".image-box" );
+
+
+
+            $('.input').toggleClass('input-off');
+
+          // set src to blob url
+      }
+  });
+});
+
+   $(document).ready(function() {
+   
+      $(".image-1").click(function(){
+        $(".image-1").clone().appendTo(".image-box");
+      });
+   
+});
+
+
+  
+
+    $( function() {
+    $( ".image-1" ).draggable({
+       helper:'clone'
+    });
+  } );
+
+    $(".image-box").droppable({
+    accept: ".image-1",
+    drop: function(event,ui){
+        var new_signature = $(ui.helper).clone().removeClass('image-box');
+        new_signature.draggable();
+        $(this).append(new_signature);
+    }
+});
+
+
+     $(document).ready(function(){
+        $(".button").click(function(){
+            location.reload(true);
+        });
+    });
+
+
+
+
+
+   
+
+   
+
+  
+
+  </script>
+</html>
