@@ -8,6 +8,7 @@
   <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
   <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
   <script src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+  <!-- <script src="/Users/jordanweed/Downloads/html2canvas (1).js"> -->
 
   <style type="text/css">
 
@@ -16,6 +17,72 @@
       font-family:Murmure;
       src:url('le-murmure.otf');
     }
+
+
+    @font-face{
+      font-family:Migra;
+      src:url('Migra-Extralight.otf');
+
+
+    }
+
+    @font-face{
+      font-family:Migra-Italic;
+      src:url('MigraItalic-ExtralightItalic.otf');
+    }
+
+     /*body::-webkit-scrollbar {
+      width: 20px;
+      height: 20px;
+      
+    }
+    body::-webkit-scrollbar-track {
+      background-image: linear-gradient(#82DE90, #FCFF64,#ff5d47);
+      border: 2px solid black;
+    }
+    body::-webkit-scrollbar-thumb {
+      background-color:black;
+      border: 2px solid black;
+    }*/
+
+    .image-gallery-container::-webkit-scrollbar {
+      width: 5px;
+      height: 5px;
+      
+    }
+
+    .image-gallery-container::-webkit-scrollbar-track {
+      /*background-color: white;
+      opacity:0,5;*/
+      border-left: 1px solid white;
+    }
+
+    .image-gallery-container::-webkit-scrollbar-thumb {
+      background-color:white;
+      /*border: 2px solid black;*/
+
+
+    }
+
+    .control-panel::-webkit-scrollbar {
+      width: 5px;
+      height: 5px;
+      
+    }
+
+    .control-panel::-webkit-scrollbar-track {
+      /*background-color: white;
+      opacity:0,5;*/
+      border-left: 1px solid white;
+    }
+
+    .control-panel::-webkit-scrollbar-thumb {
+      background-color:white;
+      /*border: 2px solid black;*/
+    }
+
+
+
 
      .background{
       
@@ -31,10 +98,10 @@
 
 
 
-    .body{
+    body{
       width:100vw;
       height:100vh;
-      /*background-color:white;*/
+      overflow:hidden;
 
     }
 
@@ -42,10 +109,13 @@
       display:inline-block;
       float:left;
       width:30%;
+      height:97.5vh;
       margin-left:0;
       color:white;
       border:1px solid black;
       z-index: -2;
+      overflow-y: scroll;
+      overflow-x:hidden;
 
 
     }
@@ -70,8 +140,8 @@
       position:absolute;
       display:inline-block;
       float:left;
-      width:30%;
-      height:690px;
+      width:30.15%;
+      height:705px;
       margin-left:0;
       color:white;
       
@@ -90,17 +160,20 @@
       width:100%;
 
       margin-left:0;
-      font-family:Murmure;
+      font-family:Migra;
+      text-transform: uppercase;
       color:white;
-      font-size:80px;
+      font-size:65px;
       padding:10px;
-      -webkit-text-stroke-width: 1px;
-      -webkit-text-stroke-color: black;
+    /*  -webkit-text-stroke-width: 1px;
+      -webkit-text-stroke-color: white;*/
       text-align:center;
       /*border:1px solid black;*/
       box-sizing: border-box;
       cursor:pointer;
     }
+
+
 
     .about-dropdown-inactive{
 
@@ -109,17 +182,18 @@
       width:100%;
 
       margin-left:0;
-      font-family:Murmure;
-      color:black;
-      font-size:30px;
+      font-family:Migra-Italic;
+      
+      color:white;
+      font-size:33px;
       padding:10px;
-      background-color:white;
+      /*background-color:white;*/
      /* -webkit-text-stroke-width: 1px;
       -webkit-text-stroke-color: black;*/
       text-align:left;
       /*border:1px solid black;*/
       box-sizing: border-box;
-      border-bottom: 1px solid white;
+      /*border-bottom: 1px solid white;*/
       /*transition: display 2s ease-in 0s;*/
 
     }
@@ -130,17 +204,18 @@
       width:100%;
 
       margin-left:0;
-      font-family:Murmure;
-      color:black;
-      font-size:30px;
+       font-family:Migra-Italic;
+      
+      color:white;
+      font-size:33px;
       padding:10px;
-      background-color:white;
+      /*background-color:white;*/
      /* -webkit-text-stroke-width: 1px;
       -webkit-text-stroke-color: black;*/
       text-align:left;
       /*border:1px solid black;*/
       box-sizing: border-box;
-      border-bottom: 1px solid white;
+      /*border-bottom: 1px solid white;*/
       /*transition: display 2s ease-in 0s;*/
 
     }
@@ -250,10 +325,11 @@
       .image-gallery-container{
 
         width:90%;
-        height:135px;
+        height:165px;
         margin:auto;
         margin-bottom:10px;
-        background-color:white;
+        background-color:transparent;
+        border:1px solid white;
         overflow:auto;
        
 
@@ -265,10 +341,13 @@
         
 
         width:100%;
-        height:135px;
+        height:165px;
         overflow:scroll;
 
+
       }
+
+      
 
      
 
@@ -314,6 +393,10 @@
 
       .restart-inactive{
         display:none;
+      }
+
+      .restart:hover{
+        transform:scale(1.25);
       }
 
       .button{
@@ -398,17 +481,20 @@
   width:90%;
   float:left;
   margin-left:5%;
-  background-color:white;
-  border:1px solid black;
-  font-family:Murmure;
+  /*background-color:white;
+  border:1px solid black;*/
+  font-family:Migra;
+  text-transform: uppercase;
   color:black;
-  font-size:28px;
+  font-size:18.5px;
   padding:5px;
   text-align:center;
   box-sizing: border-box;
 
 
 }
+
+
 
 .beauty-is-1{
 
@@ -467,7 +553,8 @@
 
         background-color:transparent;
         font-size:80px;
-        font-family:'Murmure';
+        font-family:'Migra';
+        text-transform: uppercase;
         color:black;
          -webkit-text-stroke-width: 1px;
    -webkit-text-stroke-color: white;
@@ -484,9 +571,9 @@
 
       .seperator{
 
-        position:absolute;
-        width:30%;
-        top:175px;
+        /*position:absolute;*/
+        width:100%;
+        /*top:175px;*/
         left:7px;
         /*background-color:magenta;*/
       }
@@ -505,6 +592,166 @@
         transform:rotate(90deg);
         z-index: -1;
       }
+
+      .linear-label{
+        width:90%;
+        margin:auto;
+        margin-bottom:20px;
+        font-family:Migra;
+        text-align: center;
+         text-transform: uppercase;
+         letter-spacing: 2px;
+        font-size: 25px;
+        color:white;
+         -webkit-text-stroke-width: 1px;
+   -webkit-text-stroke-color: transparent;
+
+      }
+
+      #frame1{
+
+
+        font-family:Migra;
+        text-transform: uppercase;
+        color:white;
+        font-size: 20px;
+        line-height: 0;
+        -webkit-text-stroke-width: 1px;
+   -webkit-text-stroke-color: transparent; 
+   vertical-align: middle;
+
+ }
+
+     #frame2{
+
+        font-family:Migra;
+        text-transform: uppercase;
+        color:white;
+        font-size: 20px;
+        line-height: 0;
+        -webkit-text-stroke-width: 1px;
+         -webkit-text-stroke-color: transparent; 
+         vertical-align: middle;
+
+
+     }
+
+     #frame3{
+        font-family:Migra;
+        text-transform: uppercase;
+        color:white;
+        font-size: 20px;
+        line-height: 0;
+        -webkit-text-stroke-width: 1px;
+         -webkit-text-stroke-color: transparent; 
+         vertical-align: middle;
+     }
+
+   .border-container{
+    width: 750px;
+    /*background-color: white;*/
+    vertical-align: top;
+    margin:auto;
+    margin-top:-15px;
+   }
+
+   .video-frame{
+    position:absolute;
+    width: 750px;
+    height: 562px;
+    pointer-events: none;
+    top:106px;
+    left:472px;
+
+   }
+
+   .video-frame-1{
+    position:absolute;
+
+    /*display:inline-block;*/
+    }
+
+    .video-frame-1-inactive{
+      position:absolute;
+
+      display:none;
+
+    }
+
+   .video-frame-2{
+    position:absolute;
+    display:inline-block;
+    }
+
+    .video-frame-2-inactive{
+      position:absolute;
+
+      display:none;
+      
+    }
+
+   .video-frame-3{
+    position:absolute;
+    display:inline-block;
+    }
+
+    .video-frame-3-inactive{
+      position:absolute;
+
+
+      display:none;
+      
+    }
+
+    .callout{
+
+      position: fixed;
+      top:120px;
+      left:270px;
+      
+      width:750px;
+      margin:auto;
+      font-family:Migra-Italic;
+      background-color:white;
+      color:black;
+      font-size:20px;
+      border:1px solid black;
+
+    }
+
+    .callout-header {
+  padding: 25px 15px;
+  font-size: 60px;
+  font-family:Migra;
+  text-transform: uppercase;
+  background-color:black;
+  color:white;
+  
+  text-align:center;
+  border:1px solid white;
+}
+
+.callout-container {
+  padding: 15px;
+  font-family:Migra-Italic;
+      background-color:white;
+      color:black;
+      font-size:30px;
+      
+}
+
+.closebtn {
+  position: absolute;
+  top: 5px;
+  right: 15px;
+  color: white;
+  font-size: 50px;
+  cursor: pointer;
+}
+
+.closebtn:hover {
+  color: green;
+}
 
 
 
@@ -543,15 +790,19 @@
   <div class="control-panel">
 
   <div class="about">
-    BEAUTY DESK
+    BEAUTY DESK 
   </div>
 
   <div class="about-dropdown-inactive">
-    Beauty Desk is an interactive collage tool, which abstracts the process of makeup aplication. The application of beauty products is not to reconstruct your own features to fit a mold, but rather to underline, accentuate, and accessorize your existing features and unique identity. Use the products on the Beauty Desk to amplify your own face in your front camera!
+    Beauty Desk is an interactive collage tool, which abstracts the process of makeup application.  Consider the application of beauty products not to reconstruct your own features to fit a mold, but rather to underline, accentuate, and accessorize your existing features and unique identity. Use the products on the Beauty Desk to amplify your own face in your front camera!
   </div>
 
   <div class="steps-1">
     STEP 1 - ENABLE YOUR VIDEO
+  </div>
+
+   <div class="seperator">
+  <img src="seperator-02.png"style="width:100%">
   </div>
 
   <!-- <div class="upload">
@@ -567,50 +818,82 @@
 
   STEP 2 - CHOOSE ACCESSORIES<br>
 
-  <div class="image-gallery-container">
-    <div class="image-gallery">
+  <div class="instructions">
+     * Click Image on Pasteboard to Rotate
+  </div><br>
 
-    <img src="image_set-12.png"style="width:100px" id="image-1" class="item">
-    <img src="image_set-26.png"style="width:100px" class="item">
-    <img src="image_set-18.png"style="width:100px"class="item">
-    <img src="image_set-04.png"style="width:100px"class="item">
-    <img src="image_set-29.png"style="width:100px"class="item">
-    <img src="image_set-07.png"style="width:100px"class="item">
-    <img src="image_set_2-01.png"style="width:100px"class="item">
-    <img src="image_set-16.png"style="width:100px"class="item">
-    <img src="image_set-05.png"style="width:100px"class="item">
+  <div class="image-gallery-container">
+    
+      
+
+         <img src="image_set-04.png"style="width:100px"class="item">
+     <img src="image_set-06.png"style="width:100px"class="item">
+      <img src="image_set-14.png"style="width:100px"class="item">
+       <img src="image_set-11.png"style="width:100px"class="item">
+       <img src="image_set-20.png"style="width:100px"class="item">
+        <img src="image_set-23.png"style="width:100px"class="item">
+        <img src="image_set-05.png"style="width:100px"class="item">
+        <img src="image_set-10.png"style="width:100px"class="item">
+        <img src="image_set-15.png"style="width:100px"class="item">
+        <img src="image_set-13.png"style="width:100px"class="item">
+        <img src="image_set-02.png"style="width:100px"class="item">
+        
+    
+   
+   
+    
+    
+  
+  </div>
+  <div class="linear-label">
+    Linear Extensions
+  </div>
+
+  <div class="image-gallery-container">
+
+     <img src="image_set-26.png"style="width:100px" class="item">
+       <img src="image_set-18.png"style="width:100px"class="item">
+        <img src="image_set-29.png"style="width:100px"class="item">
+        <img src="image_set-07.png"style="width:100px"class="item">
+        <img src="image_set-09.png"style="width:100px"class="item">
+        <img src="image_set-08.png"style="width:100px"class="item">
+        <img src="image_set-01.png"style="width:100px"class="item">
+        <img src="image_set_2-02.png"style="width:100px"class="item">
+    
+   
+  </div>
+
+  <div class="linear-label">
+    Radial Amplifications
+  </div>
+
+  <div class="image-gallery-container">
     <img src="image_set-19.png"style="width:100px"class="item">
-    <img src="image_set-06.png"style="width:100px"class="item">
-    <img src="image_set-11.png"style="width:100px"class="item">
-    <img src="image_set-27.png"style="width:100px"class="item">
-    <img src="image_set-10.png"style="width:100px"class="item">
-    <img src="image_set-09.png"style="width:100px"class="item">
+    <img src="image_set_2-01.png"style="width:100px"class="item">
     <img src="image_set-24.png"style="width:100px"class="item">
-    <img src="image_set-14.png"style="width:100px"class="item">
-    <img src="image_set-02.png"style="width:100px"class="item">
-    <img src="image_set-01.png"style="width:100px"class="item">
-    <img src="image_set-08.png"style="width:100px"class="item">
-    <img src="image_set-28.png"style="width:100px"class="item">
+    <img src="image_set-12.png"style="width:100px" id="image-1" class="item">
+    <img src="image_set-16.png"style="width:100px"class="item">
+    <img src="image_set-27.png"style="width:100px"class="item">
     <img src="image_set-21.png"style="width:100px"class="item">
     <img src="image_set-22.png"style="width:100px"class="item">
-    <img src="image_set-13.png"style="width:100px"class="item">
-    <img src="image_set-30.png"style="width:100px"class="item">
-    <img src="image_set-20.png"style="width:100px"class="item">
-    <img src="image_set-23.png"style="width:100px"class="item">
-    <img src="image_set-03.png"style="width:100px"class="item">
-    <img src="image_set_2-02.png"style="width:100px"class="item">
-    <img src="image_set-15.png"style="width:100px"class="item">
-  </div>
+     <img src="image_set-03.png"style="width:100px"class="item">
+     <img src="image_set-28.png"style="width:100px"class="item">
+      <img src="image_set-30.png"style="width:100px"class="item">
   </div>
 
-  <div class="image-gallery-container">
+  <div class="linear-label">
+   Assorted Magnifications
   </div>
 
-  <div class="instructions">
-    Click Image on Pasteboard to Rotate
-  </div>
-  <br>
+  
 
+
+
+
+  </div>
+
+  <div class="seperator">
+  <img src="seperator-2-03.png"style="width:100%">
   </div>
 
   
@@ -618,27 +901,72 @@
   <div class="restart">
 
     <span class="button">RESTART</span>
+    <!-- <a href="#" onclick="capture()">Click for screenshot!</a> -->
 
   </div>
+
+
+
+  
 
 </div>
 
 <div class="steps-3">
 
-    STEP 3 - DECORATE IMAGE
+    STEP 3 - DECORATE IMAGE & CUSTOMIZE TEXT
 
     <div class="image-box">
 
       <video autoplay="true" id="videoElement">
   
       </video>
+
+
      
 
    </div>
+
+   <div class="border-container">
+
+    <input type="checkbox" id="frame1" name="frame1" value="Frame 1">
+  <label for="frame1" id="frame1"> Frame 1</label>
+
+  <input type="checkbox" id="frame2" name="frame2" value="Frame 2">
+  <label for="frame2" id="frame2"> Frame 2</label>
+
+  <input type="checkbox" id="frame3" name="frame3" value="Frame 3">
+  <label for="frame3" id="frame3"> Frame 3</label>
+
+</div>
+
+  
+
    <div class="steps-3-background">
     <img src="image_set-06.png"style="height:100%">
    </div>
 </div>
+
+<div class="video-frame">
+
+  <div class="video-frame-1">
+
+    <img src="video_frame-01.png" style="width:100%;height:100%">
+
+  </div>
+
+  <div class="video-frame-2">
+
+    <img src="video_frame-02.png" style="width:100%;height:100%">
+    
+  </div>
+
+  <div class="video-frame-3">
+
+    <img src="video_frame-03.png" style="width:100%;height:100%">
+    
+  </div>
+
+  </div>
 
 <div class="beauty-is-1">
   BEAUTY IS 
@@ -653,13 +981,17 @@
 
 </div>
 
-<div class="seperator">
-  <img src="seperator-02.png"style="width:100%">
+<div class="callout">
+  <div class="callout-header">About the Beauty Desk</div>
+  <span class="closebtn" onclick="this.parentElement.style.display='none';">×</span>
+  <div class="callout-container">
+    <p>Beauty Desk is an interactive collage tool, which abstracts the process of makeup application. Rather than using common cosmetic products, use the set of collage accessories within the tool kit on the left of the page to layer on your video feed. Consider the application of these elements not to reconstruct, but rather to underline, accentuate, and accessorize your existing features. You may also choose a frame, and input your own association with the word "beauty" on the right side of your screen. Enable your video to begin! </p>
   </div>
+</div>
 
-  <div class="seperator" style="top:600px">
-  <img src="seperator-2-03.png"style="width:100%">
-  </div>
+
+
+
 
 
 
@@ -672,37 +1004,15 @@
 </body>
 <script>
 
-//   window.addEventListener('load', function() {
-//   document.querySelector('input[type="file"]').addEventListener('change', function() {
-//       if (this.files && this.files[0]) {
-//           var img = document.querySelector('img');
-//           img.onload = () => {
-//               URL.revokeObjectURL(img.src);  // no longer needed, free memory
-//           }
 
-//           img.src = URL.createObjectURL(this.files[0]);
-
-//            // $(".upload-image" ).clone().appendTo( ".image-box" );
-
-
-
-//             $('.input').toggleClass('input-off');
-
-//           // set src to blob url
-//       }
-//   });
-// });
-
-  //  $(document).ready(function() {
-   
-  //     $("#image-1").click(function(){
-  //       $("#image-1").clone().appendTo(".image-box");
-  //     });
-   
-  // });
-
-
-  
+//   function capture() {
+//     html2canvas($('body'),{
+//         onrendered: function (canvas) {                     
+//             var imgString = canvas.toDataURL("image/png");
+//             window.open(imgString);
+//         }                  
+//     })
+// };
 
 $( function() {
   //   $( "#image-1" ).draggable({
@@ -710,30 +1020,54 @@ $( function() {
   //   });
   // } );
 
-  $(".about").hover(function(){
+  // $(".about").hover(function(){
 
-    $(".about-dropdown-inactive").toggleClass("about-dropdown-active");
-  })
+  //   $(".about-dropdown-inactive").toggleClass("about-dropdown-active");
+  // })
 
-   $(".about").hover(function(){
+  //  $(".about").hover(function(){
 
-    $(".seperator").toggleClass("seperator-inactive");
-  })
+  //   $(".seperator").toggleClass("seperator-inactive");
+  // })
 
-    $(".about").hover(function(){
+  //   $(".about").hover(function(){
 
-    $(".steps-1").toggleClass("steps-1-inactive");
-  })
+  //   $(".steps-1").toggleClass("steps-1-inactive");
+  // })
 
-    $(".about").hover(function(){
+  //   $(".about").hover(function(){
 
-    $(".steps-2").toggleClass("steps-2-inactive");
-  })
+  //   $(".steps-2").toggleClass("steps-2-inactive");
+  // })
 
-    $(".about").hover(function(){
+  //   $(".about").hover(function(){
 
-    $(".restart").toggleClass("restart-inactive");
-  })
+  //   $(".restart").toggleClass("restart-inactive");
+  // })
+
+    // $("#frame1").prop('checked', true);
+    // $("#frame2").prop('checked', true);
+    // $("#frame3").prop('checked', true);
+
+
+//     $(document).on('click', 'input[type="checkbox"]', function() {      
+//     $('input[type="checkbox"]').not(this).prop('checked', true);      
+// });
+
+
+    
+  // $("#frame1").change(function() {
+  //   $(".video-frame-1").toggleClass("video-frame-1-inactive", this.checked)
+  // }).change();
+
+  //  $("#frame2").change(function() {
+  //   $(".video-frame-2").toggleClass("video-frame-2-inactive", this.checked)
+  // }).change();
+
+  //  $("#frame3").change(function() {
+  //   $(".video-frame-3").toggleClass("video-frame-3-inactive", this.checked)
+  // }).change();
+  
   
     $(".item").click(function(){
 
@@ -821,7 +1155,37 @@ if (navigator.mediaDevices.getUserMedia) {
 //         } 
 //     }
 
-   
+ 
+
+$(".video-frame-1").hide();
+$("#frame1").click(function() {
+    if($(this).is(":checked")) {
+        $(".video-frame-1").show();
+    } else {
+        $(".video-frame-1").hide();
+    }
+});
+
+$(".video-frame-2").hide();
+$("#frame2").click(function() {
+    if($(this).is(":checked")) {
+        $(".video-frame-2").show();
+    } else {
+        $(".video-frame-2").hide();
+    }
+});
+
+$(".video-frame-3").hide();
+$("#frame3").click(function() {
+    if($(this).is(":checked")) {
+        $(".video-frame-3").show();
+    } else {
+        $(".video-frame-3").hide();
+    }
+});
+
+
+
 
 
 
